@@ -1,0 +1,18 @@
+{
+  "extends": "@antfu",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "extraFileExtensions": [".vue"]
+  },
+  "rules": {
+    // Require semi-colons at the end of each line inside a typescript declaration
+    "@typescript-eslint/member-delimiter-style": [
+      "error",
+      {
+        "multiline": {
+          "delimiter": "semi"
+        }
+      }
+    ]
+  }
+}
