@@ -1,6 +1,6 @@
 <template>
   <!-- Background video -->
-  <video autoplay muted loop cover>
+  <video autoplay muted loop cover playsinline preload="auto">
     <source src="/video/hero.mp4" type="video/mp4">
   </video>
 
