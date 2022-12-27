@@ -88,7 +88,7 @@ const results = ref([
   <Carousel :items-to-show="1" :wrap-around="true" :transition="300">
     <Slide v-for="result in results" :key="result.title">
       <div class="carousel__item">
-        <h4 class="text-2xl lg:text-3xl font-weight-bold">
+        <h4 class="text-secondary text-lg md:text-2xl lg:text-3xl font-weight-bold">
           {{ result.title }}
         </h4>
         <h5 class="font-weight-thin lg:text-xl">
@@ -163,5 +163,6 @@ const results = ref([
 
 :deep(.carousel__icon) {
   fill: #dc2626;
+  margin-bottom: 130px
 }
 </style>

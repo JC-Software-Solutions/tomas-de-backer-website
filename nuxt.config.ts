@@ -7,6 +7,12 @@ export default defineNuxtConfig({
     strict: true,
   },
 
+  // loadingIndicator: {
+  //   name: 'circle',
+  //   color: '#3B8070',
+  //   background: 'white',
+  // },
+
   // css: [
   //   'vue3-carousel/dist/carousel.css',
   // ],

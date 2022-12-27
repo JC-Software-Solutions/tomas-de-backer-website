@@ -1,6 +1,6 @@
 <template>
-  <section id="calendar">
-    <h3 class="font-sans font-weight-bold text-4xl py-2">
+  <section id="calendar" class="px-4">
+    <h3 class="font-sans font-weight-bold text-xl md:text-4xl py-2">
       Next Race
     </h3>
 

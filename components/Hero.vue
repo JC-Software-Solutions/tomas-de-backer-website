@@ -5,12 +5,12 @@
   </video>
 
   <!-- Overlay -->
-  <section class="font-display text-white text-center flex flex-col align-center" style="height: 70vh;">
+  <section class="font-display text-white text-center flex flex-col align-center h-64vh sm:h-70vh">
     <div class="mt-40">
-      <h1 class="text-7xl text-shadow-lg">
+      <h1 class="text-4xl md:text-7xl text-shadow-lg">
         Tomas De Backer
       </h1>
-      <h2 class="text-4xl text-shadow-lg">
+      <h2 class="text-xl md:text-4xl text-shadow-lg">
         2022 Ford Fiesta Sprint Cup BE Champion
       </h2>
     </div>

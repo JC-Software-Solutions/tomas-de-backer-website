@@ -16,17 +16,19 @@ export default defineConfig({
 
   shortcuts: {
     btn: `
-      px-4
-      py-2
-      rounded
-      font-weight-light
-      bg-secondary
-      inline-block
-      transition
-      duration-300
-      border-1
-      border-secondary
-      hover:bg-secondary/40
+    text-sm
+    md:text-base
+    px-4
+    py-2
+    rounded
+    font-weight-light
+    bg-secondary
+    inline-block
+    transition
+    duration-300
+    border-1
+    border-secondary
+    hover:bg-secondary/40
     `,
   },
 

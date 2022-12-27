@@ -1,6 +1,6 @@
 <template>
-  <section id="results">
-    <h3 class="font-sans font-weight-bold text-4xl py-2">
+  <section id="results" class="px-2">
+    <h3 class="font-sans font-weight-bold text-xl md:text-4xl py-2">
       Results
     </h3>
 
