@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: false,
 
@@ -6,16 +5,6 @@ export default defineNuxtConfig({
     shim: false,
     strict: true,
   },
-
-  // loadingIndicator: {
-  //   name: 'circle',
-  //   color: '#3B8070',
-  //   background: 'white',
-  // },
-
-  // css: [
-  //   'vue3-carousel/dist/carousel.css',
-  // ],
 
   modules: [
     '@nuxt/content',

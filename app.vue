@@ -25,26 +25,12 @@ useHead({
     class: bodyClasses.join(' '),
   },
 })
-
-const nuxtApp = useNuxtApp()
-const loading = ref(false)
-nuxtApp.hook('page:start', () => {
-  loading.value = true
-})
-nuxtApp.hook('page:finish', () => {
-  loading.value = false
-})
 </script>
 
 <template>
-  <p v-if="loading" class="text-secondary">
-    Loading...
-  </p>
-
   <div relative min-h-screen>
     <AppHeader />
     <main pb-10 container mx-auto>
-      <NuxtLoadingIndicator />
       <NuxtPage />
     </main>
     <AppFooter absolute bottom-0 w-full />
