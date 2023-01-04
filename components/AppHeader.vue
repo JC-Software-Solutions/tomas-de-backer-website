@@ -8,13 +8,14 @@
         md:justify-around
         w-full
         py-4
+        pb-10
         md:py-0
         px-4
         text-lg
-        bg-secondary
-        bg-gradient-to-r
-        from-secondary/5
-        via-primary
+        bg-primary
+        bg-gradient-to-br
+        from-secondary/50
+        via-secondary/10
         to-primary
       "
     >
