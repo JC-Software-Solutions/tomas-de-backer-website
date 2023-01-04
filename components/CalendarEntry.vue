@@ -12,6 +12,53 @@
           Zandvoort, NL
         </h5>
         <p>12-13 November 2022</p>
+
+        <table class="mx-auto md:float-right my-2">
+          <tr>
+            <td class="text-secondary pr-4">
+              Practice
+            </td>
+            <td class="px-2">
+              saturday 12/11
+            </td>
+            <td class="text-right pl-2">
+              11:00
+            </td>
+          </tr>
+          <tr>
+            <td class="text-secondary pr-4">
+              Qualifying
+            </td>
+            <td class="px-2">
+              saturday 12/11
+            </td>
+            <td class="text-right pl-2">
+              13:00
+            </td>
+          </tr>
+          <tr>
+            <td class="text-secondary pr-4">
+              Race 1
+            </td>
+            <td class="px-2">
+              sunday 13/11
+            </td>
+            <td class="text-right pl-2">
+              09:00
+            </td>
+          </tr>
+          <tr>
+            <td class="text-secondary pr-4">
+              Race 2
+            </td>
+            <td class="px-2">
+              sunday 13/11
+            </td>
+            <td class="text-right pl-2">
+              15:00
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
 
