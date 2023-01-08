@@ -6,7 +6,7 @@
         <picture>
           <source srcset="/img/tomas/tdb1.webp" type="image/webp">
           <source srcset="/img/tomas/tdb1.jpg" type="image/jpeg">
-          <img src="/img/tomas/tdb1.jpg" class="rounded-lg shadow-lg border-2 border-secondary">
+          <img src="/img/tomas/tdb1.jpg" class="rounded-lg shadow-lg">
         </picture>
       </div>
     </div>
