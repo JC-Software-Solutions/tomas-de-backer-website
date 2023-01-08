@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     'nuxt-windicss',
     '@nuxtjs/google-fonts',
+    'nuxt-icon',
   ],
 
   content: {

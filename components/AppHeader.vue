@@ -1,3 +1,16 @@
+<script lang="ts" setup>
+const socials = ref([
+  {
+    name: 'instagram',
+    url: 'https://www.instagram.com/tomasdebacker/',
+  },
+  {
+    name: 'facebook',
+    url: 'https://www.facebook.com/tomas.debacker.1',
+  },
+])
+</script>
+
 <template>
   <header>
     <nav
@@ -39,12 +52,12 @@
           "
         >
           <li>
-            <NuxtLink class="link" href="#">
+            <NuxtLink class="link" to="/">
               Home
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink class="link" href="#">
+            <NuxtLink class="link" to="/about">
               About Tomas
             </NuxtLink>
           </li>
@@ -69,6 +82,19 @@
             </NuxtLink>
           </li>
         </ul>
+
+        <div class="pl-5">
+          <NuxtLink
+            v-for="social in socials"
+            :key="social.name"
+            class="hover:opacity-60 transition duration-200"
+            :href="social.url"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <Icon :name="`bxl:${social.name}`" size="24" class="mx-1 cursor-pointer" />
+          </NuxtLink>
+        </div>
       </div>
     </nav>
   </header>

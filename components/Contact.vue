@@ -1,20 +1,32 @@
 <template>
   <section id="contact" class="px-4">
-    <h3 class="font-sans font-weight-bold text-xl md:text-4xl py-2">
-      Contact
-    </h3>
+    <div class="flex justify-around">
+      <div class="w-1/2">
+        <picture>
+          <source srcset="/img/action/spa-rain-2.webp" type="image/webp">
+          <source srcset="/img/action/spa-rain-2.jpg" type="image/jpeg">
+          <img ref="image" src="/img/action/spa-rain-2.jpg" class="rounded-lg shadow-lg mx-auto max-h-1xl">
+        </picture>
+      </div>
+      <div class="w-1/3 mx-auto my-auto">
+        <h3 class="font-sans font-weight-bold text-xl md:text-4xl py-2">
+          Contact
+        </h3>
 
-    <div class="flex justify-center">
-      <form class="w-full md:w-1/3 text-primary">
-        <input type="text" placeholder="Name" class="w-full p-2 mb-2 rounded-md">
-        <input type="email" placeholder="Email" class="w-full p-2 mb-2 rounded-md">
-        <textarea placeholder="Message" class="w-full p-2 mb-2 rounded-md min-h-5" rows="5" />
-        <div class="text-center">
-          <button class="btn w-full md:w-4/5 text-white">
-            Send
-          </button>
-        </div>
-      </form>
+        <p class="my-4 text-sm">
+          For business and media enquiries, or just to get in touch, please complete the following form.
+        </p>
+        <form class="w-full  text-primary w-full">
+          <input type="text" placeholder="Name" class="w-full p-2 mb-2 rounded-md">
+          <input type="email" placeholder="Email" class="w-full p-2 mb-2 rounded-md">
+          <textarea placeholder="Message" class="w-full p-2 mb-2 rounded-md min-h-5" rows="5" />
+          <div class="text-center">
+            <button class="btn w-full md:w-4/5 text-white">
+              Send
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   </section>
 </template>

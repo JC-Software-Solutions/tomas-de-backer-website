@@ -55,7 +55,7 @@ const sponsors = ref([{
     </div>
 
     <div class="text-center">
-      <NuxtLink to="/about" class="btn my-5">
+      <NuxtLink to="#contact" class="btn my-5">
         Get in touch.
       </NuxtLink>
     </div>
