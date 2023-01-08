@@ -3,9 +3,9 @@
     <div class="flex justify-around">
       <div class="w-1/2">
         <picture>
-          <source srcset="/img/action/spa-rain-2.webp" type="image/webp">
-          <source srcset="/img/action/spa-rain-2.jpg" type="image/jpeg">
-          <img ref="image" src="/img/action/spa-rain-2.jpg" class="rounded-lg shadow-lg mx-auto max-h-1xl">
+          <source srcset="/img/action/spa-rain-1.webp" type="image/webp">
+          <source srcset="/img/action/spa-rain-1.jpg" type="image/jpeg">
+          <img ref="image" src="/img/action/spa-rain-1.jpg" class="rounded-lg shadow-lg mx-auto max-h-1xl">
         </picture>
       </div>
       <div class="w-1/3 mx-auto my-auto">
