@@ -51,7 +51,7 @@ function toggleMenu() {
 
       <HamburgerIcon ref="hamburger" @click="toggleMenu" />
 
-      <div ref="menu" class="opacity-0 h-0 w-full md:flex md:items-center md:w-auto md:h-16 transition-opacity duration-300">
+      <div ref="menu" class="opacity-0 h-0 w-full md:flex md:items-center md:w-auto md:h-16 md:opacity-100 transition-opacity duration-300">
         <ul
           class="
             list-none
