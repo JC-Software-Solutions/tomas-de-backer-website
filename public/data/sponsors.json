@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Race Winning Brands",
+    "url": "https://racewinningbrands.com/",
+    "image": "/img/sponsors/racewinning-brands.png"
+  },
+  {
+    "name": "Elro Solutions",
+    "url": "https://www.elrosolutions.be/",
+    "image": ""
+  },
+  {
+    "name": "Xpect motorsoprt",
+    "url": "",
+    "image": "/img/sponsors/xpect-motorsport.png"
+  },
+  {
+    "name": "Studio Volt IT",
+    "url": "https://volt-it.be/",
+    "image": "/img/sponsors/volt-it.png"
+  },
+  {
+    "name": "JC Software Solutions",
+    "url": "https://www.jcss.be/",
+    "image": "/img/sponsors/jcss.png"
+  },
+  {
+    "name": "Sketchup 3D",
+    "url": "https://sketchup3d.be/",
+    "image": "/img/sponsors/sketchup3d.png"
+  },
+  {
+    "name": "The Garden Mechanic",
+    "url": "",
+    "image": "/img/sponsors/the-garden-mechanic.png"
+  }
+]

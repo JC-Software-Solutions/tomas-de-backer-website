@@ -34,7 +34,7 @@ const socials = ref([
     >
       <div>
         <NuxtLink href="/">
-          LOGO
+          <img src="/img/logo/TDB.svg" alt="Tomas De Backer logo" class="h-8">
         </NuxtLink>
       </div>
 
@@ -67,12 +67,12 @@ const socials = ref([
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink class="link" href="#calendar">
+            <NuxtLink class="link" href="/calendar">
               Calendar
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink class="link" href="#sponsors">
+            <NuxtLink class="link" href="/#sponsors">
               Sponsors
             </NuxtLink>
           </li>

@@ -1,0 +1,68 @@
+[{
+  "title": "Round 1 - Voorjaars races",
+  "championship": "Ford Fiesta Sprint Cup",
+  "track": "Zandvoort, NL",
+  "trackImg": "zandvoort.svg",
+  "dates": ["2023-04-14", "2023-04-16"],
+  "sessions": []
+},{
+  "title": "Round 2 - Spa Euro Race",
+  "championship": "Ford Fiesta Sprint Cup",
+  "track": "Spa-Francorchamps, BE",
+  "trackImg": "spa.svg",
+  "dates": [
+    "2023-06-02",
+    "2023-06-04"
+  ],
+  "sessions": []
+},{
+  "title": "Round 3 - Zolder Superprix",
+  "championship": "Ford Fiesta Sprint Cup",
+  "track": "Zolder, BE",
+  "trackImg": "zolder.svg",
+  "dates": [
+    "2023-07-07",
+    "2023-07-09"
+  ],
+  "sessions": []
+},{
+  "title": "Round 4 - Jack's Racing Day",
+  "championship": "Ford Fiesta Sprint Cup",
+  "track": "Assen, NL",
+  "trackImg": "assen.svg",
+  "dates": [
+    "2023-08-11",
+    "2023-08-13"
+  ],
+  "sessions": []
+},{
+  "title": "Round 5 - Trophy of the Dunes",
+  "championship": "Ford Fiesta Sprint Cup",
+  "track": "Zandvoort, NL",
+  "trackImg": "zandvoort.svg",
+  "dates": [
+    "2023-09-14",
+    "2023-09-17"
+  ],
+  "sessions": []
+},{
+  "title": "Round 6 - Spa Racing Festival",
+  "championship": "Ford Fiesta Sprint Cup",
+  "track": "Spa-Francorchamps, BE",
+  "trackImg": "spa.svg",
+  "dates": [
+    "2023-10-13",
+    "2023-10-15"
+  ],
+  "sessions": []
+}, {
+  "title": "Round 7 - Supercar Madness Finale Races",
+  "championship": "Ford Fiesta Sprint Cup",
+  "track": "Assen, NL",
+  "trackImg": "assen.svg",
+  "dates": [
+    "2023-10-27",
+    "2023-10-29"
+  ],
+  "sessions": []
+}]

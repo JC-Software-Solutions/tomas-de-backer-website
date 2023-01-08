@@ -1,69 +1,76 @@
+<script lang="ts" setup>
+defineProps({
+  data: {
+    type: Object,
+    required: true,
+  },
+})
+
+function formatWeekendDate(dates: string[]) {
+  const startDate = new Date(dates[0])
+  const endDate = new Date(dates[dates.length - 1])
+
+  const startDateMonth = startDate.toLocaleString('default', { month: 'long' })
+  const endDateMonth = endDate.toLocaleString('default', { month: 'long' })
+
+  const year = startDate.getFullYear()
+
+  let startDay: number | string = startDate.getDate()
+  if (startDay < 10)
+    startDay = `0${startDay}`
+
+  let endDay: number | string = endDate.getDate()
+  if (endDay < 10)
+    endDay = `0${endDay}`
+
+  if (startDate.getMonth() === endDate.getMonth())
+    return `${startDay}-${endDay} ${startDateMonth} ${year}`
+
+  return `${startDay}-${endDay} ${startDateMonth}-${endDateMonth} ${year}`
+}
+</script>
+
 <template>
   <div class="flex flex-wrap justify-center md:justify-around items-center">
     <div class="w-full md:w-3/5 mx-auto text-center md:text-right">
       <div class="w-full md:w-1/2 mx-auto">
         <h4 class="text-secondary text-2xl lg:text-3xl font-weight-bold">
-          Round 1
+          {{ data.title }}
         </h4>
         <h5 class="font-weight-thin lg:text-xl">
-          Ford Fiesta Sprint Cup
+          {{ data.championship }}
         </h5>
         <h5 class="font-weight-light italic lg:text-xl">
-          Zandvoort, NL
+          {{ data.track }}
         </h5>
-        <p>12-13 November 2022</p>
+
+        <p>
+          {{ formatWeekendDate(data.dates) }}
+        </p>
 
         <table class="mx-auto md:float-right my-2">
-          <tr>
-            <td class="text-secondary pr-4">
-              Practice
-            </td>
-            <td class="px-2">
-              saturday 12/11
-            </td>
-            <td class="text-right pl-2">
-              11:00
-            </td>
-          </tr>
-          <tr>
-            <td class="text-secondary pr-4">
-              Qualifying
-            </td>
-            <td class="px-2">
-              saturday 12/11
-            </td>
-            <td class="text-right pl-2">
-              13:00
-            </td>
-          </tr>
-          <tr>
-            <td class="text-secondary pr-4">
-              Race 1
-            </td>
-            <td class="px-2">
-              sunday 13/11
-            </td>
-            <td class="text-right pl-2">
-              09:00
-            </td>
-          </tr>
-          <tr>
-            <td class="text-secondary pr-4">
-              Race 2
-            </td>
-            <td class="px-2">
-              sunday 13/11
-            </td>
-            <td class="text-right pl-2">
-              15:00
-            </td>
-          </tr>
+          <template v-if="!data.sessions || data.sessions.length === 0">
+            <span class="text-secondary">Session times TBA</span>
+          </template>
+          <template v-else>
+            <tr v-for="session in data.sessions" :key="session.name">
+              <td class="text-secondary pr-4">
+                {{ session.name }}
+              </td>
+              <td class="px-2">
+                {{ session.position }}
+              </td>
+              <td class="text-right pl-2">
+                {{ session.kph }}
+              </td>
+            </tr>
+          </template>
         </table>
       </div>
     </div>
 
     <div class="w-full md:w-2/5">
-      <img class="h-64 mx-auto md:mx-0 py-5 md:h-96" src="/img/tracks/zandvoort.svg">
+      <img class="h-64 mx-auto md:mx-0 py-5 md:h-96" :src="`/img/tracks/${data.trackImg}`">
     </div>
   </div>
 </template>

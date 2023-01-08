@@ -1,45 +1,10 @@
 <script lang="ts" setup>
-const sponsors = ref([{
-  name: 'JC Software Solutions',
-  url: 'https://www.jcss.be/',
-  image: '/img/sponsors/jcss.png',
-}, {
-  name: 'JC Software Solutions',
-  url: 'https://www.jcss.be/',
-  image: '/img/sponsors/jcss.png',
-}, {
-  name: 'JC Software Solutions',
-  url: 'https://www.jcss.be/',
-  image: '/img/sponsors/jcss.png',
-}, {
-  name: 'JC Software Solutions',
-  url: 'https://www.jcss.be/',
-  image: '/img/sponsors/jcss.png',
-}, {
-  name: 'JC Software Solutions',
-  url: 'https://www.jcss.be/',
-  image: '/img/sponsors/jcss.png',
-}, {
-  name: 'JC Software Solutions',
-  url: 'https://www.jcss.be/',
-  image: '/img/sponsors/jcss.png',
-}, {
-  name: 'JC Software Solutions',
-  url: 'https://www.jcss.be/',
-  image: '/img/sponsors/jcss.png',
-}, {
-  name: 'JC Software Solutions',
-  url: 'https://www.jcss.be/',
-  image: '/img/sponsors/jcss.png',
-}, {
-  name: 'JC Software Solutions',
-  url: 'https://www.jcss.be/',
-  image: '/img/sponsors/jcss.png',
-}, {
-  name: 'JC Software Solutions',
-  url: 'https://www.jcss.be/',
-  image: '/img/sponsors/jcss.png',
-}])
+defineProps({
+  data: {
+    type: Array<any>,
+    required: true,
+  },
+})
 </script>
 
 <template>
@@ -49,7 +14,7 @@ const sponsors = ref([{
     </h3>
 
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5">
-      <NuxtLink v-for="sponsor in sponsors" :key="sponsor.name" :href="sponsor.url" target="_blank" rel="noopener noreferrer">
+      <NuxtLink v-for="sponsor in data" :key="sponsor.name" :href="sponsor.url" target="_blank" rel="noopener noreferrer" class="mx-5 my-5">
         <img :src="sponsor.image" :alt="sponsor.name">
       </NuxtLink>
     </div>
