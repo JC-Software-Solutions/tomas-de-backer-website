@@ -9,19 +9,30 @@ const socials = ref([
     url: 'https://www.facebook.com/tomas.debacker.1',
   },
 ])
+
+const menu = ref(null)
+function toggleMenu() {
+  if (menu.value) {
+    const menuDiv = menu.value as HTMLElement
+    menuDiv.classList.toggle('opacity-0')
+    menuDiv.classList.toggle('h-auto')
+    menuDiv.classList.toggle('max-h-96')
+  }
+}
 </script>
 
 <template>
   <header>
     <nav
       class="
+        absolute
+        md:static
         flex flex-wrap
         items-center
         justify-between
         md:justify-around
         w-full
         py-4
-        pb-10
         md:py-0
         px-4
         text-lg
@@ -38,9 +49,9 @@ const socials = ref([
         </NuxtLink>
       </div>
 
-      <HamburgerIcon />
+      <HamburgerIcon ref="hamburger" @click="toggleMenu" />
 
-      <div class="hidden w-full md:flex md:items-center md:w-auto">
+      <div ref="menu" class="opacity-0 h-0 w-full md:flex md:items-center md:w-auto md:h-16 transition-opacity duration-300">
         <ul
           class="
             list-none
@@ -49,6 +60,8 @@ const socials = ref([
             md:flex
             md:justify-between
             md:pt-0
+            transition-all
+            duration-150
           "
         >
           <li>
@@ -83,7 +96,7 @@ const socials = ref([
           </li>
         </ul>
 
-        <div class="pl-5">
+        <div class="pl-5 text-center">
           <NuxtLink
             v-for="social in socials"
             :key="social.name"
