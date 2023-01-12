@@ -1,8 +1,7 @@
 <template>
   <section class="flex justify-center items-center flex-wrap md:flex-nowrap flex-row text-white">
     <div class="w-full md:w-2/5">
-      <!-- <div class="bg-green-500 h-90 w-50 mx-auto" /> -->
-      <div class="mx-auto p-4 xs:p-0 md:p-12">
+      <div class="mt-12 md:mt-0 mx-auto p-4 xs:p-0 md:p-12">
         <picture>
           <source srcset="/img/tomas/tdb1.webp" type="image/webp">
           <source srcset="/img/tomas/tdb1.jpg" type="image/jpeg">
