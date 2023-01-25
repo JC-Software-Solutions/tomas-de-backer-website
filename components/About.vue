@@ -26,7 +26,7 @@
 
       <div class="text-center md:text-left">
         <NuxtLink to="/about" class="btn my-5 mx-auto">
-          Read full story.
+          {{ $t('read-full-story') }}.
         </NuxtLink>
       </div>
     </div>

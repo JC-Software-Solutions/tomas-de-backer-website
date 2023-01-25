@@ -24,7 +24,7 @@ defineProps<{
 
     <div class="text-center">
       <NuxtLink to="#contact" class="btn my-5">
-        Get in touch.
+        {{ $t('get-in-touch') }}.
       </NuxtLink>
     </div>
   </section>

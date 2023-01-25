@@ -2,91 +2,15 @@
 import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 
-const results = ref([
-  {
-    title: 'Round 1',
-    championship: 'Ford Fiesta Sprint Cup',
-    track: 'Spa Francorchamps, BE',
-    startDate: new Date('2021-09-11'),
-    endDate: new Date('2021-09-12'),
-    sessions: [{
-      name: 'qualifying',
-      position: 10,
-      kph: 180.6,
-      laps: 5,
-      fastestLap: '1:45.123',
-    }, {
-      name: 'race 1',
-      position: 1,
-      kph: 190.5,
-      laps: 5,
-      fastestLap: '1:45.123',
-    }, {
-      name: 'race 2',
-      position: 2,
-      kph: 180.6,
-      laps: 5,
-      fastestLap: '1:45.123',
-    }],
-  },
-  {
-    title: 'Round 2',
-    championship: 'Ford Fiesta Sprint Cup',
-    track: 'Spa Francorchamps, BE',
-    startDate: new Date('2021-09-11'),
-    endDate: new Date('2021-09-12'),
-    sessions: [{
-      name: 'qualifying',
-      position: 10,
-      kph: 180.6,
-      laps: 5,
-      fastestLap: '1:45.123',
-    }, {
-      name: 'race 1',
-      position: 1,
-      kph: 190.5,
-      laps: 5,
-      fastestLap: '1:45.123',
-    }, {
-      name: 'race 2',
-      position: 2,
-      kph: 180.6,
-      laps: 5,
-      fastestLap: '1:45.123',
-    }],
-  },
-  {
-    title: 'Round 3',
-    championship: 'Ford Fiesta Sprint Cup',
-    track: 'Zandvoort, NL',
-    startDate: new Date('2021-09-11'),
-    endDate: new Date('2021-09-12'),
-    sessions: [{
-      name: 'qualifying',
-      position: 10,
-      kph: 180.6,
-      laps: 5,
-      fastestLap: '1:45.123',
-    }, {
-      name: 'race 1',
-      position: 1,
-      kph: 190.5,
-      laps: 5,
-      fastestLap: '1:45.123',
-    }, {
-      name: 'race 2',
-      position: 2,
-      kph: 180.6,
-      laps: 5,
-      fastestLap: '1:45.123',
-    }],
-  },
-])
+const { data } = useAsyncData(async () => {
+  const calendar = await fetch('/data/results-2023.json').then(res => res.json())
+  return calendar
+})
 </script>
 
 <template>
   <Carousel :items-to-show="1" :wrap-around="true" :transition="300">
-    <Slide v-for="result in results" :key="result.title">
+    <Slide v-for="result in data" :key="result.title">
       <ResultItem :result="result" />
     </Slide>
     <template #addons>

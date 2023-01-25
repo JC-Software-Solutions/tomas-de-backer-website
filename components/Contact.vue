@@ -14,15 +14,15 @@
         </h3>
 
         <p class="my-4 text-sm">
-          For business and media enquiries, or just to get in touch, please complete the following form.
+          {{ $t('enquiries') }}
         </p>
         <form class="w-full  text-primary w-full">
-          <input type="text" placeholder="Name" class="w-full p-2 mb-2 rounded-md">
-          <input type="email" placeholder="Email" class="w-full p-2 mb-2 rounded-md">
-          <textarea placeholder="Message" class="w-full p-2 mb-2 rounded-md min-h-5" rows="5" />
+          <input type="text" :placeholder="$t('name')" class="w-full p-2 mb-2 rounded-md">
+          <input type="email" placeholder="e-mail" class="w-full p-2 mb-2 rounded-md">
+          <textarea :placeholder="$t('message')" class="w-full p-2 mb-2 rounded-md min-h-5" rows="5" />
           <div class="text-center">
-            <button class="btn w-full md:w-4/5 text-white">
-              Send
+            <button class="btn w-full md:w-4/5 text-white capitalize">
+              {{ $t('send') }}
             </button>
           </div>
         </form>

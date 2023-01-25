@@ -3,5 +3,21 @@
   "results": "results",
   "calendar": "calendar",
   "sponsors": "sponsors",
-  "contact": "contact"
+  "contact": "contact",
+  "mystory": "my story",
+  "palmares": "track record",
+  "read-full-story": "Read full story",
+  "see-more": "See more",
+  "position": "Position",
+  "kph": "kph",
+  "laps": "Laps",
+  "fastest-lap": "Fastest Lap",
+  "qualification": "Qualification",
+  "session-times-tba": "Session times TBA",
+  "next-race": "next race",
+  "get-in-touch": "Get in touch",
+  "enquiries": "For business and media enquiries, or just to get in touch, please complete the following form.",
+  "name": "name",
+  "message": "message",
+  "send": "send"
 }

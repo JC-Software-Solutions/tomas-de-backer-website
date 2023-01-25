@@ -6,12 +6,15 @@ defineProps({
   },
 })
 
+const { $i18n } = useNuxtApp()
+const locale = computed(() => $i18n.locales.value.find((locale: any) => locale.code === $i18n.locale.value))
+
 function formatWeekendDate(dates: string[]) {
   const startDate = new Date(dates[0])
   const endDate = new Date(dates[dates.length - 1])
 
-  const startDateMonth = startDate.toLocaleString('default', { month: 'long' })
-  const endDateMonth = endDate.toLocaleString('default', { month: 'long' })
+  const startDateMonth = startDate.toLocaleString(locale.value.iso, { month: 'long' })
+  const endDateMonth = endDate.toLocaleString(locale.value.iso, { month: 'long' })
 
   const year = startDate.getFullYear()
 
@@ -50,7 +53,9 @@ function formatWeekendDate(dates: string[]) {
 
         <table class="mx-auto md:float-right my-2">
           <template v-if="!data.sessions || data.sessions.length === 0">
-            <span class="text-secondary">Session times TBA</span>
+            <span class="text-secondary">
+              {{ $t('session-times-tba') }}
+            </span>
           </template>
           <template v-else>
             <tr v-for="session in data.sessions" :key="session.name">
@@ -70,7 +75,7 @@ function formatWeekendDate(dates: string[]) {
     </div>
 
     <div class="w-full md:w-2/5">
-      <img class="h-64 mx-auto md:mx-0 py-5 md:h-96" :src="`/img/tracks/${data.trackImg}`">
+      <img class="h-64 mx-auto md:mx-0 py-5 md:h-96" :src="`/img/tracks/${data.trackImg}`" :alt="`${data.track} trackmap`">
     </div>
   </div>
 </template>

@@ -1,6 +1,9 @@
 <script lang="ts" setup>
+const { $i18n } = useNuxtApp()
+const locale = $i18n.locale.value
+
 const { data } = useAsyncData(async () => {
-  const palmares = await fetch('/data/palmares.json').then(res => res.json())
+  const palmares = await fetch(`/data/${locale}/palmares.json`).then(res => res.json())
   return palmares
 })
 </script>
@@ -15,8 +18,8 @@ const { data } = useAsyncData(async () => {
       <div class="w-1/2" />
       <div class="w-1/2">
         <article>
-          <h4 class="text-2xl">
-            My story
+          <h4 class="text-2xl capitalize">
+            {{ $t('mystory') }}
           </h4>
           <p>
             Tomas heeft al vanaf zijn eerste bezoek aan het Circuit van Zolder en Spa-Francorchamps het racevirus goed te pakken.
@@ -70,8 +73,8 @@ const { data } = useAsyncData(async () => {
       </div>
     </div>
 
-    <h4 class="text-2xl">
-      Palmares
+    <h4 class="text-2xl capitalize">
+      {{ $t('palmares') }}
     </h4>
     <div class="flex flex-wrap">
       <div class="w-full xl:w-1/2 text-sm md:text-base">

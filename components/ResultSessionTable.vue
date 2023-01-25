@@ -15,17 +15,17 @@ defineProps<{
     <thead>
       <tr class="text-secondary font-normal text-xs md:text-sm lg:text-base">
         <th />
-        <th>Position</th>
-        <th>Kph</th>
-        <th>Laps</th>
-        <th>Fastest Lap</th>
+        <th>{{ $t('position') }}</th>
+        <th>{{ $t('kph') }}</th>
+        <th>{{ $t('laps') }}</th>
+        <th>{{ $t('fastest-lap') }}</th>
       </tr>
     </thead>
     <tbody>
       <template v-for="session in sessions" :key="session.name">
         <tr>
           <td class="text-secondary capitalize text-xs lg:text-base">
-            {{ session.name }}
+            {{ $t(session.name) }}
           </td>
           <td class="w-80px text-xs lg:text-base">
             {{ session.position }}

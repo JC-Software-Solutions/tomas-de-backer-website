@@ -3,5 +3,22 @@
   "results": "résultats",
   "calendar": "calendrier",
   "sponsors": "sponsors",
-  "contact": "contact"
+  "contact": "contact",
+  "mystory": "mon histoire",
+  "palmares": "palmarès",
+  "read-full-story": "Lire l'histoire complète",
+  "see-more": "voir plus",
+  "position": "Position",
+  "kph": "km/h",
+  "laps": "Tours",
+  "fastest-lap": "Tour le plus rapide",
+  "qualification": "Qualification",
+  "session-times-tba": "Les heures des séances ne sont pas encore connues",
+  "race": "race",
+  "next-race": "prochaine course",
+  "get-in-touch": "Entrer en contact",
+  "enquiries": "Pour les demandes des entreprises et des médias, ou simplement pour entrer en contact, veuillez remplir le formulaire suivant.",
+  "name": "nom",
+  "message": "message",
+  "send": "envoyer"
 }
