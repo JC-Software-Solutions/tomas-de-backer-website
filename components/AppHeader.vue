@@ -78,12 +78,15 @@ function toggleMenu() {
             md:mt-0
             md:w-auto
             pb-4
+            md:pb-0
             bg-primary
             bg-gradient-to-tr
             from-secondary/50
             via-secondary/10
             to-primary
             md:bg-transparent
+            md:from-transparent
+            md:to-transparent
             list-none
             pt-4
             text-base
