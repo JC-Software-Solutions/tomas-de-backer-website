@@ -66,11 +66,6 @@ function toggleMenu() {
           "
         >
           <li>
-            <NuxtLink class="link" to="/">
-              {{ $t('home') }}
-            </NuxtLink>
-          </li>
-          <li>
             <NuxtLink class="link" to="about">
               {{ $t('about-tomas') }}
             </NuxtLink>
