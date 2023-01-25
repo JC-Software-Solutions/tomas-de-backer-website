@@ -8,12 +8,43 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxt/content',
+    '@nuxtjs/i18n',
     'nuxt-windicss',
     '@nuxtjs/google-fonts',
     'nuxt-icon',
   ],
 
   content: {
+  },
+
+  i18n: {
+    defaultLocale: 'nl',
+    strategy: 'no_prefix',
+    locales: [
+      {
+        name: 'Nederlands',
+        code: 'nl',
+        iso: 'nl-BE',
+        file: 'nl-BE.json',
+      },
+      {
+        name: 'English',
+        code: 'en',
+        iso: 'en-US',
+        file: 'en-US.json',
+      },
+      {
+        name: 'Français',
+        code: 'fr',
+        iso: 'fr-BE',
+        file: 'fr-BE.json',
+      },
+    ],
+    lazy: true,
+    langDir: 'locales',
+    detectBrowserLanguage: {
+      fallbackLocale: 'en',
+    },
   },
 
   googleFonts: {

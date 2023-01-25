@@ -60,38 +60,39 @@ function toggleMenu() {
             md:flex
             md:justify-between
             md:pt-0
+            capitalize
             transition-all
             duration-150
           "
         >
           <li>
             <NuxtLink class="link" to="/">
-              Home
+              {{ $t('home') }}
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink class="link" to="/about">
-              About Tomas
+            <NuxtLink class="link" to="about">
+              {{ $t('about-tomas') }}
             </NuxtLink>
           </li>
           <li>
             <NuxtLink class="link" href="#last-result">
-              Results
+              {{ $t('results') }}
             </NuxtLink>
           </li>
           <li>
             <NuxtLink class="link" href="/calendar">
-              Calendar
+              {{ $t('calendar') }}
             </NuxtLink>
           </li>
           <li>
             <NuxtLink class="link" href="/#sponsors">
-              Sponsors
+              {{ $t('sponsors') }}
             </NuxtLink>
           </li>
           <li>
             <NuxtLink class="link" href="#contact">
-              Contact
+              {{ $t('contact') }}
             </NuxtLink>
           </li>
         </ul>
@@ -107,6 +108,10 @@ function toggleMenu() {
           >
             <Icon :name="`bxl:${social.name}`" size="24" class="mx-1 cursor-pointer" />
           </NuxtLink>
+        </div>
+
+        <div class="ml-5 text-center">
+          <LangSwitcher />
         </div>
       </div>
     </nav>

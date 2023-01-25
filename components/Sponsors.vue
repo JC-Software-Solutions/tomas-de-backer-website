@@ -1,10 +1,13 @@
 <script lang="ts" setup>
-defineProps({
-  data: {
-    type: Array<any>,
-    required: true,
-  },
-})
+interface Sponsor {
+  name: string;
+  url: string;
+  image: string;
+}
+
+defineProps<{
+  data?: Sponsor[];
+}>()
 </script>
 
 <template>
