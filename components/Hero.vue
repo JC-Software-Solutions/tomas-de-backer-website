@@ -11,7 +11,7 @@
         Tomas De Backer
       </h1>
       <h2 class="text-xl md:text-4xl text-shadow-lg">
-        2022 Ford Fiesta Sprint Cup BE Champion
+        {{ $t('hero-title') }}
       </h2>
     </div>
   </section>
