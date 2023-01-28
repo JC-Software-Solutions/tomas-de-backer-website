@@ -85,6 +85,7 @@ const { data: palmares } = useAsyncData('palmares', async () => queryContent(`/$
       <div class="w-full xl:w-1/2" data-aos="fade-left">
         <NuxtPicture
           src="/img/tomas/podium.jpg"
+          format="webp"
           :img-attrs="{
             class: 'rounded-lg shadow-lg mx-auto md:mt-10 md:max-w-700px w-auto',
             alt: $t('img-alt.podium'),

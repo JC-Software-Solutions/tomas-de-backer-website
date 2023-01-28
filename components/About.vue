@@ -4,6 +4,7 @@
       <div class="mt-12 md:mt-0 mx-auto p-4 xs:p-0 md:p-12" data-aos="fade-right">
         <NuxtPicture
           src="/img/tomas/tomas-eddy.jpg"
+          format="webp"
           :img-attrs="{
             class: 'rounded-lg shadow-lg',
             alt: $t('img-alt.tomas-eddy'),
