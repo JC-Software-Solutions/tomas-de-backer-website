@@ -44,6 +44,7 @@ function toggleMenu() {
         from-secondary/50
         via-secondary/10
         to-primary
+        z-1
       "
     >
       <div>
