@@ -19,7 +19,7 @@ export default defineNuxtConfig({
 
   i18n: {
     defaultLocale: 'nl',
-    strategy: 'no_prefix',
+    strategy: 'prefix_except_default',
     locales: [
       {
         name: 'Nederlands',

@@ -22,6 +22,18 @@ function toggleMenu() {
     visible.value = !visible.value
   }
 }
+
+const route = useRoute()
+const { $localePath } = useNuxtApp()
+
+function findLocalePath(page: string) {
+  if (page.includes('#')) {
+    const pathWithoutLeadingSlash = route.path.slice(1)
+    const [localePathPart] = pathWithoutLeadingSlash.split('/')
+    return `/${localePathPart}${page}`
+  }
+  return $localePath(page)
+}
 </script>
 
 <template>
@@ -48,7 +60,7 @@ function toggleMenu() {
       "
     >
       <div @click="() => visible ? toggleMenu() : undefined">
-        <NuxtLink href="/">
+        <NuxtLink :to="findLocalePath('index')">
           <img src="/img/logo/TDB.svg" alt="Tomas De Backer logo" class="h-8">
         </NuxtLink>
       </div>
@@ -101,27 +113,27 @@ function toggleMenu() {
           @click="() => visible ? toggleMenu() : undefined"
         >
           <li>
-            <NuxtLink class="link" to="about">
+            <NuxtLink class="link" :to="findLocalePath('about')">
               {{ $t('about-tomas') }}
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink class="link" href="#last-result">
+            <NuxtLink class="link" :to="findLocalePath('results')">
               {{ $t('results') }}
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink class="link" href="/calendar">
+            <NuxtLink class="link" :to="findLocalePath('calendar')">
               {{ $t('calendar') }}
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink class="link" href="/#sponsors">
+            <NuxtLink class="link" :to="findLocalePath('/#sponsors')">
               {{ $t('sponsors') }}
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink class="link" href="#contact">
+            <NuxtLink class="link" :to="findLocalePath('/#contact')">
               {{ $t('contact') }}
             </NuxtLink>
           </li>
@@ -130,7 +142,7 @@ function toggleMenu() {
               v-for="social in socials"
               :key="social.name"
               class="hover:opacity-60 transition duration-200"
-              :href="social.url"
+              :to="social.url"
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -149,7 +161,7 @@ function toggleMenu() {
             v-for="social in socials"
             :key="social.name"
             class="hover:opacity-60 transition duration-200"
-            :href="social.url"
+            :to="social.url"
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -172,5 +184,9 @@ function toggleMenu() {
 
 li {
   @apply ml-4 md:ml-0
+}
+
+:deep(#headlessui-menu-items-4) {
+  @apply z-1;
 }
 </style>
