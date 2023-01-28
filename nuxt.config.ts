@@ -56,4 +56,8 @@ export default defineNuxtConfig({
       messages,
     },
   },
+
+  image: {
+    provider: 'netlify',
+  },
 })
