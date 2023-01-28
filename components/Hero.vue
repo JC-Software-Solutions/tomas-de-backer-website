@@ -5,7 +5,7 @@
   </video>
 
   <!-- Overlay -->
-  <section class="font-display text-white text-center flex flex-col align-center h-64vh sm:h-70vh" data-aos="fade-up">
+  <section class="font-display text-white text-center flex flex-col align-center h-64vh sm:h-70vh" data-aos="fade-up z-0">
     <div class="mt-40">
       <h1 class="text-4xl md:text-7xl text-shadow-lg">
         Tomas De Backer
