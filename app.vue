@@ -34,6 +34,9 @@ useHead({
   },
   link: [
     ...(i18nHead.link ?? []),
+    { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+    { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+    { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#0f172a' },
   ],
   meta: [
     ...(i18nHead.meta ?? []),
@@ -41,6 +44,10 @@ useHead({
       hid: 'description',
       name: 'description',
       content: $i18n.t('seo.description'),
+    },
+    {
+      name: 'theme-color',
+      content: '#0f172a',
     },
   ],
   title: $i18n.t('seo.title'),
