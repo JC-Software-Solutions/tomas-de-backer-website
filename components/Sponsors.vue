@@ -19,7 +19,7 @@ defineProps<{
     </h3>
 
     <div class="sponsor-grid grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5">
-      <NuxtLink v-for="sponsor in data" :key="sponsor.name" :href="sponsor.url" target="_blank" rel="noopener noreferrer" class="p-2 mx-5 my-5" data-aos="zoom-in">
+      <NuxtLink v-for="sponsor in data" :key="sponsor.name" :to="sponsor.url" target="_blank" rel="noopener noreferrer" class="p-2 mx-5 my-5" data-aos="zoom-in">
         <img :src="sponsor.image" :alt="sponsor.name" class="mx-auto">
       </NuxtLink>
     </div>
