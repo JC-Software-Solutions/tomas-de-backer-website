@@ -14,6 +14,7 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxt/content',
+    '@nuxt/image-edge',
     '@nuxtjs/i18n',
     'nuxt-windicss',
     '@nuxtjs/google-fonts',

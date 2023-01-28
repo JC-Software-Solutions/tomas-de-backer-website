@@ -2,11 +2,13 @@
   <section id="contact" class="px-4 py-20">
     <div class="flex justify-around">
       <div class="hidden w-1/2 md:block" data-aos="fade-right">
-        <picture>
-          <source srcset="/img/action/spa-rain-1.webp" type="image/webp">
-          <source srcset="/img/action/spa-rain-1.jpg" type="image/jpeg">
-          <img ref="image" src="/img/action/spa-rain-1.jpg" class="rounded-lg shadow-lg mx-auto max-h-1xl">
-        </picture>
+        <NuxtPicture
+          src="/img/action/spa-rain-1.jpg"
+          :img-attrs="{
+            class: 'rounded-lg shadow-lg mx-auto max-h-1xl',
+            alt: $t('img-alt.spa-rain'),
+          }"
+        />
       </div>
       <div class="w-full sm:w-4/5 md:w-1/3 mx-auto my-auto" data-aos="fade-left">
         <h3 class="font-sans font-weight-bold text-xl md:text-4xl py-2">

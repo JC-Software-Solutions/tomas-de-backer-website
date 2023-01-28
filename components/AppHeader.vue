@@ -61,7 +61,7 @@ function findLocalePath(page: string) {
     >
       <div @click="() => visible ? toggleMenu() : undefined">
         <NuxtLink :to="findLocalePath('index')">
-          <img src="/img/logo/TDB.svg" alt="Tomas De Backer logo" class="h-8">
+          <NuxtImg src="/img/logo/TDB.svg" alt="Tomas De Backer logo" class="h-8" />
         </NuxtLink>
       </div>
 

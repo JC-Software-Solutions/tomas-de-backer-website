@@ -76,7 +76,7 @@ function formatWeekendDate(dates: string[]) {
     </div>
 
     <div class="w-full md:w-2/5" data-aos="fade-left">
-      <img class="h-64 mx-auto md:mx-0 py-5 md:h-96" :src="`/img/tracks/${data.trackImg}`" :alt="`${data.track} trackmap`">
+      <NuxtImg class="h-64 mx-auto md:mx-0 py-5 md:h-96" :src="`/img/tracks/${data.trackImg}`" :alt="`${data.track} trackmap`" />
     </div>
   </div>
 </template>

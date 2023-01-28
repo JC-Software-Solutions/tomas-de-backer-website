@@ -83,11 +83,13 @@ const { data: palmares } = useAsyncData('palmares', async () => queryContent(`/$
       </div>
 
       <div class="w-full xl:w-1/2" data-aos="fade-left">
-        <picture>
-          <source srcset="/img/tomas/podium.webp" type="image/webp">
-          <source srcset="/img/tomas/podium.jpg" type="image/jpeg">
-          <img src="/img/tomas/podium.jpg" class="rounded-lg shadow-lg mx-auto md:mt-10 md:max-w-700px w-auto" alt="Tomas De Backer on the podium">
-        </picture>
+        <NuxtPicture
+          src="/img/tomas/podium.jpg"
+          :img-attrs="{
+            class: 'rounded-lg shadow-lg mx-auto md:mt-10 md:max-w-700px w-auto',
+            alt: $t('img-alt.podium'),
+          }"
+        />
       </div>
     </div>
   </div>
