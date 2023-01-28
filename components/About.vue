@@ -1,7 +1,7 @@
 <template>
-  <section class="flex justify-center items-center flex-wrap md:flex-nowrap flex-row text-white">
+  <section class="flex justify-center items-center flex-wrap md:flex-nowrap flex-row text-white py-20">
     <div class="w-full md:w-2/5">
-      <div class="mt-12 md:mt-0 mx-auto p-4 xs:p-0 md:p-12">
+      <div class="mt-12 md:mt-0 mx-auto p-4 xs:p-0 md:p-12" data-aos="fade-right">
         <picture>
           <source srcset="/img/tomas/tdb1.webp" type="image/webp">
           <source srcset="/img/tomas/tdb1.jpg" type="image/jpeg">
@@ -9,7 +9,7 @@
         </picture>
       </div>
     </div>
-    <div class="w-full md:w-2/3 px-4">
+    <div class="w-full md:w-2/3 px-4" data-aos="fade-left">
       <h3 class="font-sans font-weight-bold text-2xl py-2">
         Tomas De Backer
       </h3>

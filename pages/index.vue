@@ -44,10 +44,10 @@ const nextRace = computed(() => {
       mx-auto
     "
   >
-    <About class="pt-4 pb-10" />
-    <Results class="pt-4 pb-10" />
-    <NextRace v-if="nextRace" class="pt-4 pb-10" :next-race="nextRace" />
-    <Sponsors class="pt-4 pb-10" :data="data?.sponsors" />
-    <Contact class="pt-4 pb-10" />
+    <About />
+    <Results />
+    <NextRace v-if="nextRace" :next-race="nextRace" />
+    <Sponsors :data="data?.sponsors" />
+    <Contact />
   </div>
 </template>

@@ -10,17 +10,13 @@ const { data } = useAsyncData(async () => {
 
 <template>
   <div class="container flex flex-col mx-auto p-4">
-    <h3 class="text-4xl text-center">
-      Tomas De Backer
-    </h3>
-
     <div class="flex flex-wrap mt-5">
-      <div class="w-1/2" />
-      <div class="w-1/2">
+      <div class="w-1/2" data-aos="fade-right" />
+      <div class="w-1/2" data-aos="fade-left">
         <article>
-          <h4 class="text-2xl capitalize">
+          <h3 class="font-sans font-weight-bold text-xl md:text-4xl py-2 capitalize">
             {{ $t('mystory') }}
-          </h4>
+          </h3>
           <p>
             Tomas heeft al vanaf zijn eerste bezoek aan het Circuit van Zolder en Spa-Francorchamps het racevirus goed te pakken.
             Dit begon al op 2 jarige leeftijd. Sinds dat moment is hij niet meer weg te slaan van het race gebeuren.
@@ -73,11 +69,11 @@ const { data } = useAsyncData(async () => {
       </div>
     </div>
 
-    <h4 class="text-2xl capitalize">
-      {{ $t('palmares') }}
-    </h4>
-    <div class="flex flex-wrap">
-      <div class="w-full xl:w-1/2 text-sm md:text-base">
+    <div class="flex flex-wrap mt-48">
+      <div class="w-full xl:w-1/2 text-sm md:text-base" data-aos="fade-right">
+        <h3 class="font-sans font-weight-bold text-xl md:text-4xl py-2 capitalize" data-aos="fade-right">
+          {{ $t('palmares') }}
+        </h3>
         <ul class="ml-5">
           <li v-for="{ year, title } in data" :key="title" class="flex flex-col flex-wrap md:flex-row my-3 md:my-1">
             <div class="font-weight-bold text-secondary inline-block w-28">
@@ -90,11 +86,11 @@ const { data } = useAsyncData(async () => {
         </ul>
       </div>
 
-      <div class="w-full xl:w-1/2">
+      <div class="w-full xl:w-1/2" data-aos="fade-left">
         <picture>
           <source srcset="/img/tomas/podium.webp" type="image/webp">
           <source srcset="/img/tomas/podium.jpg" type="image/jpeg">
-          <img src="/img/tomas/podium.jpg" class="rounded-lg shadow-lg mx-auto md:mt-10 md:max-w-500px w-auto" alt="Tomas De Backer on the podium">
+          <img src="/img/tomas/podium.jpg" class="rounded-lg shadow-lg mx-auto md:mt-10 md:max-w-700px w-auto" alt="Tomas De Backer on the podium">
         </picture>
       </div>
     </div>

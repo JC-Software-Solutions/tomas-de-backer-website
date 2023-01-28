@@ -36,7 +36,7 @@ function formatWeekendDate(dates: string[]) {
 <template>
   <div class="flex flex-wrap justify-center md:justify-around items-center">
     <div class="w-full md:w-3/5 mx-auto text-center md:text-right">
-      <div class="w-full md:w-1/2 mx-auto">
+      <div class="w-full md:w-1/2 mx-auto" data-aos="fade-right">
         <h4 class="text-secondary text-2xl lg:text-3xl font-weight-bold">
           {{ data.title }}
         </h4>
@@ -74,7 +74,7 @@ function formatWeekendDate(dates: string[]) {
       </div>
     </div>
 
-    <div class="w-full md:w-2/5">
+    <div class="w-full md:w-2/5" data-aos="fade-left">
       <img class="h-64 mx-auto md:mx-0 py-5 md:h-96" :src="`/img/tracks/${data.trackImg}`" :alt="`${data.track} trackmap`">
     </div>
   </div>

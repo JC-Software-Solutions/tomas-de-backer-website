@@ -1,4 +1,13 @@
 <script lang="ts" setup>
+import AOS from 'aos'
+
+onMounted(() => {
+  AOS.init({
+    duration: 1000,
+    delay: 150,
+  })
+})
+
 const htmlClasses = [
   'scroll-smooth',
 ]
