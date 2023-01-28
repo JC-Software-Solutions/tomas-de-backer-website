@@ -1,11 +1,7 @@
 <script lang="ts" setup>
 const { $i18n } = useNuxtApp()
-const locale = $i18n.locale.value
 
-const { data } = useAsyncData(async () => {
-  const palmares = await fetch(`/data/${locale}/palmares.json`).then(res => res.json())
-  return palmares
-})
+const { data: palmares } = useAsyncData('palmares', async () => queryContent(`/${$i18n.localeProperties.value.code}/palmares`).findOne())
 </script>
 
 <template>
@@ -75,7 +71,7 @@ const { data } = useAsyncData(async () => {
           {{ $t('palmares') }}
         </h3>
         <ul class="ml-5">
-          <li v-for="{ year, title } in data" :key="title" class="flex flex-col flex-wrap md:flex-row my-3 md:my-1">
+          <li v-for="{ year, title } in palmares?.body" :key="title" class="flex flex-col flex-wrap md:flex-row my-3 md:my-1">
             <div class="font-weight-bold text-secondary inline-block w-28">
               {{ year }}
             </div>

@@ -1,24 +1,13 @@
 <script lang="ts" setup>
-const { data } = useAsyncData(async () => {
-  const [
-    sponsors,
-    calendar,
-  ] = await Promise.all([
-    fetch('/data/sponsors.json').then(res => res.json()),
-    fetch('/data/calendar-2023.json').then(res => res.json()),
-  ])
-  return {
-    sponsors,
-    calendar,
-  }
-})
+const { data: calendar } = useAsyncData('calendar', () => queryContent('/calendar-2023').findOne())
+const { data: sponsors } = useAsyncData('sponsors', () => queryContent('/sponsors').findOne())
 
 const nextRace = computed(() => {
-  if (!data.value?.calendar)
+  if (!calendar.value)
     return null
 
   const now = new Date().getTime()
-  const sortedCalendar = [...data.value?.calendar]
+  const sortedCalendar = [...calendar.value.body]
   sortedCalendar.sort((a, b) => {
     const dateA = new Date(a.dates[0]).getTime()
     const dateB = new Date(b.dates[0]).getTime()
@@ -47,7 +36,7 @@ const nextRace = computed(() => {
     <About />
     <Results />
     <NextRace v-if="nextRace" :next-race="nextRace" />
-    <Sponsors :data="data?.sponsors" />
+    <Sponsors :data="sponsors ? sponsors.body : []" />
     <Contact />
   </div>
 </template>

@@ -1,6 +1,6 @@
-export default defineNuxtConfig({
-  ssr: false,
+import messages from './locales'
 
+export default defineNuxtConfig({
   nitro: {
     prerender: {
       routes: ['/sitemap.xml'],
@@ -15,7 +15,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxtjs/i18n',
-    '@nuxtjs/robots',
     'nuxt-windicss',
     '@nuxtjs/google-fonts',
     'nuxt-icon',
@@ -28,9 +27,6 @@ export default defineNuxtConfig({
     },
   },
 
-  content: {
-  },
-
   i18n: {
     defaultLocale: 'nl',
     strategy: 'prefix_except_default',
@@ -40,31 +36,23 @@ export default defineNuxtConfig({
         name: 'Nederlands',
         code: 'nl',
         iso: 'nl-BE',
-        file: 'nl-BE.json',
       },
       {
         name: 'English',
         code: 'en',
         iso: 'en-US',
-        file: 'en-US.json',
       },
       {
         name: 'Français',
         code: 'fr',
         iso: 'fr-BE',
-        file: 'fr-BE.json',
       },
     ],
-    lazy: true,
-    langDir: 'locales',
     detectBrowserLanguage: {
       fallbackLocale: 'en',
     },
-  },
-
-  robots: {
-    UserAgent: '*',
-    Disallow: '',
-    SiteMap: 'https://tomasdebacker.be/sitemap.xml',
+    vueI18n: {
+      messages,
+    },
   },
 })

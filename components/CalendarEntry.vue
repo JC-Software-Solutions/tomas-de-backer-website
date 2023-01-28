@@ -7,14 +7,12 @@ defineProps({
 })
 
 const { $i18n } = useNuxtApp()
-const locale = computed(() => $i18n.locales.value.find((locale: any) => locale.code === $i18n.locale.value))
-
 function formatWeekendDate(dates: string[]) {
   const startDate = new Date(dates[0])
   const endDate = new Date(dates[dates.length - 1])
 
-  const startDateMonth = startDate.toLocaleString(locale.value.iso, { month: 'long' })
-  const endDateMonth = endDate.toLocaleString(locale.value.iso, { month: 'long' })
+  const startDateMonth = startDate.toLocaleString($i18n.localeProperties.value.iso, { month: 'long' })
+  const endDateMonth = endDate.toLocaleString($i18n.localeProperties.value.iso, { month: 'long' })
 
   const year = startDate.getFullYear()
 
@@ -51,26 +49,29 @@ function formatWeekendDate(dates: string[]) {
           {{ formatWeekendDate(data.dates) }}
         </p>
 
-        <table class="mx-auto md:float-right my-2">
-          <template v-if="!data.sessions || data.sessions.length === 0">
-            <span class="text-secondary">
-              {{ $t('session-times-tba') }}
-            </span>
-          </template>
-          <template v-else>
-            <tr v-for="session in data.sessions" :key="session.name">
-              <td class="text-secondary pr-4">
-                {{ session.name }}
-              </td>
-              <td class="px-2">
-                {{ session.position }}
-              </td>
-              <td class="text-right pl-2">
-                {{ session.kph }}
-              </td>
-            </tr>
-          </template>
-        </table>
+        <p v-if="!data.sessions || data.sessions.length === 0" class="text-secondary">
+          {{ $t('session-times-tba') }}
+        </p>
+
+        <!-- TODO: fix hydration mismatch when adding session times -->
+        <!-- <table class="mx-auto md:float-right my-2">
+        <tr v-if="!data.sessions || data.sessions.length === 0">
+          <td />
+        </tr>
+        <template>
+          <tr v-for="session in data.sessions" :key="session.name">
+            <td class="text-secondary pr-4">
+              {{ session.name }}
+            </td>
+            <td class="px-2">
+              {{ session.position }}
+            </td>
+            <td class="text-right pl-2">
+              {{ session.kph }}
+            </td>
+          </tr>
+        </template>
+        </table> -->
       </div>
     </div>
 

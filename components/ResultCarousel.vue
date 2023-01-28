@@ -2,15 +2,17 @@
 import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 
-const { data } = useAsyncData(async () => {
-  const calendar = await fetch('/data/results-2023.json').then(res => res.json())
-  return calendar
+defineProps({
+  results: {
+    type: Array,
+    required: true,
+  },
 })
 </script>
 
 <template>
   <Carousel :items-to-show="1" :wrap-around="true" :transition="300">
-    <Slide v-for="result in data" :key="result.title">
+    <Slide v-for="result in results" :key="result.title">
       <ResultItem :result="result" />
     </Slide>
     <template #addons>

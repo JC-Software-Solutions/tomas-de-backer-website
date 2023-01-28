@@ -1,8 +1,5 @@
 <script lang="ts" setup>
-const { data } = useAsyncData(async () => {
-  const calendar = await fetch('/data/calendar-2023.json').then(res => res.json())
-  return calendar
-})
+const { data: calendar } = useAsyncData('calendar', () => queryContent('/calendar-2023').findOne())
 </script>
 
 <template>
@@ -11,6 +8,6 @@ const { data } = useAsyncData(async () => {
       My 2023 Season Calendar
     </h3>
 
-    <CalendarEntry v-for="cal in data" :key="cal.title" :data="cal" class="my-5" />
+    <CalendarEntry v-for="cal in calendar?.body" :key="cal.title" :data="cal" class="my-5" />
   </div>
 </template>
