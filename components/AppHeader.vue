@@ -47,7 +47,7 @@ function toggleMenu() {
         z-1
       "
     >
-      <div>
+      <div @click="() => visible ? toggleMenu() : undefined">
         <NuxtLink href="/">
           <img src="/img/logo/TDB.svg" alt="Tomas De Backer logo" class="h-8">
         </NuxtLink>
@@ -97,7 +97,8 @@ function toggleMenu() {
             capitalize
             transition-all
             duration-150
-          "
+            "
+          @click="() => visible ? toggleMenu() : undefined"
         >
           <li>
             <NuxtLink class="link" to="about">
