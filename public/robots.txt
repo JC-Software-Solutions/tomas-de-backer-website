@@ -1,0 +1,4 @@
+UserAgent: *
+Allow: /
+
+Sitemap: https://tomasdebacker.be/sitemap.xml
