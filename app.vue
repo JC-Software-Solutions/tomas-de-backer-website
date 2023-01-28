@@ -22,14 +22,28 @@ const bodyClasses = [
   'to-secondary/30',
 ]
 
+const { $localeHead, $i18n } = useNuxtApp()
+const i18nHead = $localeHead({ addSeoAttributes: true })
 useHead({
   htmlAttrs: {
-    lang: 'en',
+    ...i18nHead.htmlAttrs,
     class: htmlClasses.join(' '),
   },
   bodyAttrs: {
     class: bodyClasses.join(' '),
   },
+  link: [
+    ...(i18nHead.link ?? []),
+  ],
+  meta: [
+    ...(i18nHead.meta ?? []),
+    {
+      hid: 'description',
+      name: 'description',
+      content: $i18n.t('seo.description'),
+    },
+  ],
+  title: $i18n.t('seo.title'),
 })
 </script>
 
