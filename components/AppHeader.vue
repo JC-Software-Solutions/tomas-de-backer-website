@@ -141,6 +141,7 @@ function findLocalePath(page: string) {
             <NuxtLink
               v-for="social in socials"
               :key="social.name"
+              :name="social.name"
               class="hover:opacity-60 transition duration-200"
               :to="social.url"
               target="_blank"
