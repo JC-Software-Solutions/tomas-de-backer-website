@@ -52,10 +52,21 @@ useHead({
   ],
   title: $i18n.t('seo.title'),
 })
+
+const nuxtApp = useNuxtApp()
+const loading = ref(false)
+nuxtApp.hook('page:start', () => {
+  loading.value = true
+})
+nuxtApp.hook('page:finish', () => {
+  loading.value = false
+})
 </script>
 
 <template>
   <div relative min-h-screen>
+    <FullScreenLoader v-if="loading" />
+
     <AppHeader />
     <main pb-10 container mx-auto>
       <NuxtPage />
