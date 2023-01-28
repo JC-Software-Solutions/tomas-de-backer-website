@@ -1,6 +1,13 @@
 <script lang="ts" setup>
 const loading = ref(false)
 
+const video = ref<HTMLVideoElement>()
+
+onMounted(() => {
+  loading.value = true
+  video.value?.load()
+})
+
 function onVideoLoaded() {
   loading.value = false
 }
@@ -10,7 +17,7 @@ function onVideoLoaded() {
   <FullScreenLoader v-if="loading" />
 
   <!-- Background video -->
-  <video autoplay muted loop cover playsinline preload="auto" @loadstart="loading = true" @loadeddata="onVideoLoaded">
+  <video ref="video" autoplay muted loop cover playsinline preload="auto" @loadeddata="onVideoLoaded">
     <source src="/video/hero.mp4" type="video/mp4">
   </video>
 
