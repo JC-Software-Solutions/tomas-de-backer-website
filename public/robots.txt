@@ -1,4 +1,4 @@
-UserAgent: *
-Allow: /
+User-agent: *
+Disallow: /
 
 Sitemap: https://tomasdebacker.be/sitemap.xml
