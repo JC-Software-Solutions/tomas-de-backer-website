@@ -7,6 +7,10 @@ export default defineNuxtConfig({
     },
   },
 
+  css: [
+    '~/assets/css/reduced-motion.css',
+  ],
+
   typescript: {
     shim: false,
     strict: true,
