@@ -30,7 +30,9 @@ function findLocalePath(page: string) {
   if (page.includes('#')) {
     const pathWithoutLeadingSlash = route.path.slice(1)
     const [localePathPart] = pathWithoutLeadingSlash.split('/')
-    return `/${localePathPart}${page}`
+    if (localePathPart)
+      return page
+    return `${localePathPart}${page}`
   }
   return $localePath(page)
 }
@@ -133,7 +135,7 @@ function findLocalePath(page: string) {
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink class="link" :to="findLocalePath('/#contact')">
+            <NuxtLink class="link" :to="findLocalePath('/#contact')" replace>
               {{ $t('contact') }}
             </NuxtLink>
           </li>
@@ -165,6 +167,7 @@ function findLocalePath(page: string) {
             :to="social.url"
             target="_blank"
             rel="noreferrer noopener"
+            :aria-label="$t('link-to', { to: social.name })"
           >
             <Icon :name="`bxl:${social.name}`" size="24" class="mx-1 cursor-pointer" />
           </NuxtLink>

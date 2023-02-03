@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-// import { vIntersectionObserver } from '@vueuse/components'
-
 interface Sponsor {
   name: string;
   url: string;
@@ -19,9 +17,14 @@ defineProps<{
     </h3>
 
     <div class="sponsor-grid grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5">
-      <NuxtLink v-for="sponsor in data" :key="sponsor.name" :to="sponsor.url" target="_blank" rel="noopener noreferrer" class="p-2 mx-5 my-5" data-aos="zoom-in">
-        <NuxtImg :src="sponsor.image" format="webp" :alt="`${sponsor.name} sponsor logo`" class="mx-auto" />
-      </NuxtLink>
+      <template v-for="sponsor in data" :key="sponsor.name">
+        <NuxtLink v-if="sponsor.url" :to="sponsor.url" target="_blank" rel="noopener noreferrer" class="p-2 mx-5 my-5" data-aos="zoom-in">
+          <NuxtImg :src="sponsor.image" format="webp" :alt="`${sponsor.name} sponsor logo`" class="mx-auto" />
+        </NuxtLink>
+        <div v-else class="p-2 mx-5 my-5" data-aos="zoom-in">
+          <NuxtImg :src="sponsor.image" format="webp" :alt="`${sponsor.name} sponsor logo`" class="mx-auto" />
+        </div>
+      </template>
     </div>
 
     <div class="text-center" data-aos="fade-up">

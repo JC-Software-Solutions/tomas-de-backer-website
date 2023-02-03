@@ -13,7 +13,7 @@ const { data: results } = useAsyncData('results', async () => queryContent('/res
     </ClientOnly>
 
     <div class="text-center" data-aos="fade-up">
-      <NuxtLink class="btn my-5 mx-auto">
+      <NuxtLink class="btn my-5 mx-auto" to="/results">
         {{ $t('check-all-results') }}
       </NuxtLink>
     </div>
