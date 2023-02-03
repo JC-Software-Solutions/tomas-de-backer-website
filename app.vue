@@ -13,6 +13,7 @@ const htmlClasses = [
 ]
 
 const bodyClasses = [
+  'overflow-x-hidden',
   'antialiased',
   'bg-primary',
   'text-white',
@@ -41,16 +42,10 @@ useHead({
   meta: [
     ...(i18nHead.meta ?? []),
     {
-      hid: 'description',
-      name: 'description',
-      content: $i18n.t('seo.description'),
-    },
-    {
       name: 'theme-color',
       content: '#0f172a',
     },
   ],
-  title: $i18n.t('seo.title'),
 })
 
 const nuxtApp = useNuxtApp()

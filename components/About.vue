@@ -3,33 +3,27 @@
     <div class="w-full md:w-2/5">
       <div class="mt-12 md:mt-0 mx-auto p-4 xs:p-0 md:p-12" data-aos="fade-right">
         <NuxtPicture
-          src="/img/tomas/tomas-eddy.jpg"
+          src="/img/tomas/tomas.jpg"
           format="webp"
           :img-attrs="{
             class: 'rounded-lg shadow-lg',
-            alt: $t('img-alt.tomas-eddy'),
+            alt: $t('img-alt.tomas'),
           }"
         />
       </div>
     </div>
     <div class="w-full md:w-2/3 px-4" data-aos="fade-left">
       <h3 class="font-sans font-weight-bold text-2xl py-2">
-        Tomas De Backer
+        {{ $t('about-excerpt-title') }}
       </h3>
+
       <p class="font-sans font-weight-light w-full md:w-4/5">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Suspendisse at hendrerit purus, sit amet malesuada leo.
-        Orci varius natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Ut purus ipsum, convallis vitae facilisis sed,
-        tristique a orci. Maecenas imperdiet scelerisque sapien, id vehicula leo mollis in.
-        Morbi orci enim, auctor sit amet ultricies id, cursus ac augue.
-        In hac habitasse platea dictumst. Aliquam maximus ex id dui cursus,
-        non elementum est posuere. Cras eu leo non nunc porttitor iaculis vitae ac ex.
+        {{ $t('about-excerpt') }}
       </p>
 
       <div class="text-center md:text-left">
         <NuxtLink to="/about" class="btn my-5 mx-auto">
-          {{ $t('read-full-story') }}.
+          {{ $t('about-discover-full') }}
         </NuxtLink>
       </div>
     </div>

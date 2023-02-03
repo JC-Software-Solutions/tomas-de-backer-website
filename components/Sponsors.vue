@@ -26,7 +26,7 @@ defineProps<{
 
     <div class="text-center" data-aos="fade-up">
       <NuxtLink to="#contact" class="btn my-5">
-        {{ $t('get-in-touch') }}.
+        {{ $t('get-in-touch') }}
       </NuxtLink>
     </div>
   </section>

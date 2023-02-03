@@ -23,6 +23,12 @@ const nextRace = computed(() => {
 
   return next
 })
+
+const { $i18n } = useNuxtApp()
+useSeoMeta({
+  title: $i18n.t('seo.index-title', { separator: '|' }),
+  description: $i18n.t('seo.index-description'),
+})
 </script>
 
 <template>

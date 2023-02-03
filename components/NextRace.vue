@@ -17,7 +17,7 @@ defineProps({
 
     <div class="text-center" data-aos="fade-up">
       <NuxtLink class="btn my-5 mx-auto" to="/calendar">
-        {{ $t('see-more') }}.
+        {{ $t('check-all-races') }}
       </NuxtLink>
     </div>
   </section>
