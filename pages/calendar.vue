@@ -1,5 +1,11 @@
 <script lang="ts" setup>
 const { data: calendar } = useAsyncData('calendar', () => queryContent('/calendar-2023').findOne())
+
+const { $i18n } = useNuxtApp()
+useSeoMeta({
+  title: $i18n.t('seo.calendar-title', { separator: '|' }),
+  description: $i18n.t('seo.calendar-description'),
+})
 </script>
 
 <template>
