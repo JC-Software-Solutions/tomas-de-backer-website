@@ -28,7 +28,9 @@ export default defineConfig({
     duration-300
     border-1
     border-secondary
-    hover:bg-secondary/40
+    enabled:hover:bg-secondary/40
+    disabled:opacity-60
+    disabled:cursor-not-allowed
     `,
   },
 

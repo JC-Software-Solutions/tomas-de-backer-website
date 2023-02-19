@@ -19,12 +19,12 @@
         <p class="my-4 text-sm">
           {{ $t('enquiries') }}
         </p>
-        <form name="contact" class="w-full text-primary w-full" method="POST" data-netlify="true">
-          <input name="name" type="text" :placeholder="$t('name')" class="w-full p-2 mb-2 rounded-md" required>
-          <input name="email" type="email" placeholder="e-mail" class="w-full p-2 mb-2 rounded-md" required>
-          <textarea name="message" :placeholder="$t('message')" class="w-full p-2 mb-2 rounded-md min-h-5" rows="5" required />
+        <form ref="form" class="w-full text-primary w-full" netlify>
+          <input v-model="formData.name" name="name" type="text" :placeholder="$t('name')" class="w-full p-2 mb-2 rounded-md" required>
+          <input v-model="formData.email" name="email" type="email" placeholder="e-mail" class="w-full p-2 mb-2 rounded-md" required>
+          <textarea v-model="formData.message" name="message" :placeholder="$t('message')" class="w-full p-2 mb-2 rounded-md min-h-5" rows="5" required />
           <div class="text-center">
-            <button type="submit" class="btn w-full md:w-4/5 text-white capitalize">
+            <button @click.prevent="onSubmit" :disabled="notAllRequiredFieldsFilledIn" class="btn btn-ghost w-full md:w-4/5 text-white capitalize">
               {{ $t('send') }}
             </button>
           </div>
@@ -33,3 +33,32 @@
     </div>
   </section>
 </template>
+
+<script lang="ts" setup>
+const formData = reactive({
+  name: '',
+  email: '',
+  message: '',
+})
+
+const notAllRequiredFieldsFilledIn = computed(() => {
+  return !formData.name || !formData.email || !formData.message
+})
+
+const form = ref<HTMLFormElement>();
+function onSubmit() {
+  const isValid = form.value?.reportValidity();
+  if (!isValid) {
+    return;
+  }
+
+  const formData = new FormData(form.value)
+  fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString(),
+  })
+  .then(() => console.log('Form successfully submitted'))
+  .catch((error) => alert(error));
+}
+</script>
