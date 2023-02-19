@@ -19,7 +19,25 @@
         <p class="my-4 text-sm">
           {{ $t('enquiries') }}
         </p>
-        <form name="contact" ref="form" class="w-full text-primary w-full" netlify>
+
+        <div v-if="success" class="rounded-lg my-5 bg-green-500">
+          <p class="text-center text-white p-2">
+            {{ $t('contact-success') }}
+          </p>
+        </div>
+
+        <div v-if="failed" class="rounded-lg my-5 bg-red-500">
+          <p class="text-center text-white p-2">
+            {{ $t('contact-failed') }}
+          </p>
+        </div>
+
+        <form name="contact" ref="form" class="w-full text-primary w-full" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
+          <p hidden>
+            <label>Don’t fill this out: <input name="bot-field" /></label>
+          </p>
+
           <input v-model="formData.name" name="name" type="text" :placeholder="$t('name')" class="w-full p-2 mb-2 rounded-md" required>
           <input v-model="formData.email" name="email" type="email" placeholder="e-mail" class="w-full p-2 mb-2 rounded-md" required>
           <textarea v-model="formData.message" name="message" :placeholder="$t('message')" class="w-full p-2 mb-2 rounded-md min-h-5" rows="5" required />
@@ -35,6 +53,9 @@
 </template>
 
 <script lang="ts" setup>
+const success = ref(false);
+const failed = ref(false);
+
 const formData = reactive({
   name: '',
   email: '',
@@ -46,19 +67,27 @@ const notAllRequiredFieldsFilledIn = computed(() => {
 })
 
 const form = ref<HTMLFormElement>();
-function onSubmit() {
+async function onSubmit() {
+  success.value = false;
+  failed.value = false;
+
   const isValid = form.value?.reportValidity();
   if (!isValid) {
     return;
   }
 
   const formData = new FormData(form.value)
-  fetch('/', {
+
+  try {
+    await fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(formData).toString(),
-  })
-  .then(() => console.log('Form successfully submitted'))
-  .catch((error) => alert(error));
+      body: new URLSearchParams(formData).toString()
+    });
+    success.value = true;
+  } catch (err) {
+    console.error(err);
+    failed.value = true;
+  }
 }
 </script>
