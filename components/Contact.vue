@@ -19,7 +19,7 @@
         <p class="my-4 text-sm">
           {{ $t('enquiries') }}
         </p>
-        <form ref="form" class="w-full text-primary w-full" netlify>
+        <form name="contact" ref="form" class="w-full text-primary w-full" netlify>
           <input v-model="formData.name" name="name" type="text" :placeholder="$t('name')" class="w-full p-2 mb-2 rounded-md" required>
           <input v-model="formData.email" name="email" type="email" placeholder="e-mail" class="w-full p-2 mb-2 rounded-md" required>
           <textarea v-model="formData.message" name="message" :placeholder="$t('message')" class="w-full p-2 mb-2 rounded-md min-h-5" rows="5" required />
