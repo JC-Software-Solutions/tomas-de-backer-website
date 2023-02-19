@@ -12,7 +12,7 @@ defineProps<{
 </script>
 
 <template>
-  <table class="table my-4" data-aos="zoom-in">
+  <table class="table my-4 mx-auto" data-aos="zoom-in">
     <thead>
       <tr class="text-secondary font-normal text-xs md:text-sm lg:text-base">
         <th />

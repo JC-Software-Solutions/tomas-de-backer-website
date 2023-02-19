@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <div>
-    <div data-aos="zoom-in">
+    <div>
       <h4 class="text-secondary text-lg md:text-2xl lg:text-3xl font-weight-bold">
         {{ result.title }}
       </h4>
