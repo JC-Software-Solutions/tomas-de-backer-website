@@ -34,7 +34,6 @@
 
         <form
           name="contact"
-          ref="form"
           class="w-full text-primary w-full"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
@@ -82,8 +81,6 @@ async function onSubmit() {
   if (!isValid) {
     return;
   }
-
-  const formData = new FormData(form.value)
 
   try {
     await fetch('/', {
