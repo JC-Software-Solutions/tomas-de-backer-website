@@ -2,16 +2,23 @@
 import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 
-defineProps({
+const props = defineProps({
   results: {
     type: Array,
     required: true,
   },
 })
+
+const caroussel = ref()
+onMounted(() => {
+  nextTick(() => {
+    caroussel.value.slideTo(props.results.length - 1)
+  })
+})
 </script>
 
 <template>
-  <Carousel :items-to-show="1" :wrap-around="true" :transition="300">
+  <Carousel ref="caroussel" :items-to-show="1" :wrap-around="true" :transition="300">
     <Slide v-for="result in results" :key="result.title">
       <ResultItem :result="result" />
     </Slide>

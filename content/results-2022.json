@@ -1,0 +1,233 @@
+[
+  {
+    "title": "Race 1 Zandvoort",
+    "championship": "Ford Fiesta Sprint Cup",
+    "track": "Zandvoort, NL",
+    "startDate": "2022-04-08",
+    "endDate": "2022-04-10",
+    "sessions": [
+      {
+      "name": "qualification",
+      "position": 2,
+      "positionBelgium": 1,
+      "kph": 126.11,
+      "laps": 12,
+      "fastestLap": "2:01:579"
+      },
+      {
+      "name": "race 1",
+      "position": 1,
+      "positionBelgium": 1,
+      "kph": 117.86,
+      "laps": 14,
+      "fastestLap": "2:08:654"
+      },
+      {
+      "name": "race 2",
+      "position": 2,
+      "positionBelgium": 1,
+      "kph": 125.3,
+      "laps": 15,
+      "fastestLap": "2:01:440"
+      }
+    ]
+  },
+  {
+    "title": "Race 2 Zolder",
+    "championship": "Ford Fiesta Sprint Cup",
+    "track": "Zolder, BE",
+    "startDate": "2022-06-10",
+    "endDate": "2022-06-12",
+    "sessions": [
+      {
+        "name": "qualification",
+        "position": 7,
+        "positionBelgium": 3,
+        "kph": 123.89,
+        "laps": 6,
+        "fastestLap": "1:56:235"
+      },
+      {
+        "name": "race 1",
+        "position": 15,
+        "positionBelgium": 7,
+        "kph": 122.97,
+        "laps": 9,
+        "fastestLap": "1:55:099"
+      },
+      {
+        "name": "race 2",
+        "position": 1,
+        "positionBelgium": 1,
+        "kph": 122.95,
+        "laps": 16,
+        "fastestLap": "1:55:638"
+      }
+    ]
+  },
+  {
+    "title": "Race 3 Spa",
+    "championship": "Ford Fiesta Sprint Cup",
+    "track": "Spa Francorchamps, BE",
+    "startDate": "2022-07-15",
+    "endDate": "2022-07-17",
+    "sessions": [
+      {
+        "name": "qualification",
+        "position": 4,
+        "positionBelgium": 2,
+        "kph": 139.22,
+        "laps": 7,
+        "fastestLap": "3:01:435"
+      },
+      {
+        "name": "race 1",
+        "position": 5,
+        "positionBelgium": 2,
+        "kph": 139.06,
+        "laps": 9,
+        "fastestLap": "3:01:689"
+      },
+      {
+        "name": "race 2",
+        "position": 4,
+        "positionBelgium": 1,
+        "kph": 139.12,
+        "laps": 10,
+        "fastestLap": "3:01:704"
+      }
+    ]
+  },
+  {
+    "title": "Race 4 Assen",
+    "championship": "Ford Fiesta Sprint Cup",
+    "track": "Assen, NL",
+    "startDate": "2022-08-05",
+    "endDate": "2022-08-07",
+    "sessions": [
+      {
+        "name": "qualification",
+        "position": 2,
+        "positionBelgium": 1,
+        "kph": 133.69,
+        "laps": 8,
+        "fastestLap": "2:02:656"
+      },
+      {
+        "name": "race 1",
+        "position": 6,
+        "positionBelgium": 1,
+        "kph": 114.26,
+        "laps": 13,
+        "fastestLap": "2:03:318"
+      },
+      {
+        "name": "race 2",
+        "position": 1,
+        "positionBelgium": 1,
+        "kph": 113.10,
+        "laps": 14,
+        "fastestLap": "2:02:381"
+      }
+    ]
+  },
+  {
+    "title": "Race 5 Zandvoort",
+    "championship": "Ford Fiesta Sprint Cup",
+    "track": "Zandvoort, NL",
+    "startDate": "2022-09-30",
+    "endDate": "2022-10-02",
+    "sessions": [
+      {
+        "name": "qualification",
+        "position": 6,
+        "positionBelgium": 1,
+        "kph": 125.80,
+        "laps": 10,
+        "fastestLap": "2:02:253"
+      },
+      {
+        "name": "race 1",
+        "position": 9,
+        "positionBelgium": 2,
+        "kph": 115.85,
+        "laps": 14,
+        "fastestLap": "2:09:878"
+      },
+      {
+        "name": "race 2",
+        "position": 3,
+        "positionBelgium": 1,
+        "kph": 112.40,
+        "laps": 14,
+        "fastestLap": "2:01:964"
+      }
+    ]
+  },
+  {
+    "title": "Race 6 Spa",
+    "championship": "Ford Fiesta Sprint Cup",
+    "track": "Spa Francorchamps, BE",
+    "startDate": "2022-10-14",
+    "endDate": "2022-10-16",
+    "sessions": [
+      {
+        "name": "qualification",
+        "position": 1,
+        "positionBelgium": 1,
+        "kph": 128.8,
+        "laps": 6,
+        "fastestLap": "3:15:807"
+      },
+      {
+        "name": "race 1",
+        "position": 3,
+        "positionBelgium": 2,
+        "kph": 130,
+        "laps": 10,
+        "fastestLap": "3:01:189"
+      },
+      {
+        "name": "race 2",
+        "position": 1,
+        "positionBelgium": 1,
+        "kph": 139.2,
+        "laps": 12,
+        "fastestLap": "2:01:964"
+      }
+    ]
+  },
+    {
+      "title": "Race 7 Assen",
+      "championship": "Ford Fiesta Sprint Cup",
+      "track": "Assen, NL",
+    "startDate": "2022-10-28",
+    "endDate": "2022-10-30",
+      "sessions": [
+        {
+          "name": "qualification",
+          "position": 2,
+          "positionBelgium": 1,
+          "kph": 133.81,
+          "laps": 9,
+          "fastestLap": "2:02:544"
+        },
+        {
+          "name": "race 1",
+          "position": 1,
+          "positionBelgium": 1,
+          "kph": 131.59,
+          "laps": 15,
+          "fastestLap": "2:02:985"
+        },
+        {
+          "name": "race 2",
+          "position": 3,
+          "positionBelgium": 1,
+          "kph": 124.91,
+          "laps": 14,
+          "fastestLap": "2:02:835"
+        }
+      ]
+    }
+]

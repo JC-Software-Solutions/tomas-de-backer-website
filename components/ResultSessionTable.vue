@@ -3,6 +3,7 @@ defineProps<{
   sessions: {
     name: string;
     position: number;
+    positionBelgium: number;
     kph: number;
     laps: number;
     fastestLap: number;
@@ -16,6 +17,7 @@ defineProps<{
       <tr class="text-secondary font-normal text-xs md:text-sm lg:text-base">
         <th />
         <th>{{ $t('position') }}</th>
+        <th>{{ $t('position', { type: '🇧🇪' }) }}</th>
         <th>{{ $t('kph') }}</th>
         <th>{{ $t('laps') }}</th>
         <th>{{ $t('fastest-lap') }}</th>
@@ -29,6 +31,9 @@ defineProps<{
           </td>
           <td class="w-80px text-xs lg:text-base">
             {{ session.position }}
+          </td>
+          <td class="w-90px text-xs lg:text-base">
+            {{ session.positionBelgium }}
           </td>
           <td class="w-40px md:w-80px text-xs lg:text-base">
             {{ session.kph }}

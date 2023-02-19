@@ -34,7 +34,7 @@
   "palmares": "palmarès",
   "read-full-story": "Lire l'histoire complète",
   "see-more": "voir plus",
-  "position": "Position",
+  "position": "Position {type}",
   "kph": "km/h",
   "laps": "Tours",
   "fastest-lap": "Tour le plus rapide",

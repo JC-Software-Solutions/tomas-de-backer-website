@@ -32,7 +32,7 @@
   "palmares": "track record",
   "read-full-story": "Read full story",
   "see-more": "See more",
-  "position": "Position",
+  "position": "Position {type}",
   "link-to": "Link to {to}",
   "language-switcher": "Change language",
   "kph": "kph",

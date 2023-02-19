@@ -30,7 +30,7 @@
   "contact": "contact",
   "mystory": "mijn verhaal",
   "palmares": "palmares",
-  "position": "Positie",
+  "position": "Positie {type}",
   "link-to": "Link to {to}",
   "language-switcher": "Taal veranderen",
   "kph": "km/u",
