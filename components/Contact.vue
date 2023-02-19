@@ -37,7 +37,6 @@
           class="w-full text-primary w-full"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
-          data-netlify-recaptcha="true"
         >
           <input type="hidden" name="form-name" value="contact" />
           <p hidden>
