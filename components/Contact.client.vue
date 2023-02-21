@@ -75,15 +75,14 @@ async function onSubmit() {
 
         <form
           ref="form"
-          name="contact"
           class="w-full text-primary w-full"
           netlify
-          netlify-honeypot="bot-field"
         >
+          >
           <input type="hidden" name="form-name" value="contact">
-          <p hidden>
+          <!-- <p hidden>
             <label>Don’t fill this out: <input name="bot-field"></label>
-          </p>
+          </p> -->
 
           <input id="name" v-model="formData.name" name="name" type="text" :placeholder="$t('name')" class="w-full p-2 mb-2 rounded-md" required>
           <input id="email" v-model="formData.email" name="email" type="email" placeholder="e-mail" class="w-full p-2 mb-2 rounded-md" required>
