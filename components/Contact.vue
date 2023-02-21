@@ -18,11 +18,11 @@ async function onSubmit() {
   failed.value = false
 
   const isValid = form.value?.reportValidity()
-  console.log(isValid)
   if (!isValid)
     return
 
   try {
+    const formData = new FormData(form.value)
     await fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
