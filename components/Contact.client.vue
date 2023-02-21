@@ -25,7 +25,9 @@ async function onSubmit() {
     const formData = new FormData(form.value)
     await fetch('/', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
       body: new URLSearchParams(formData).toString(),
     })
     success.value = true
