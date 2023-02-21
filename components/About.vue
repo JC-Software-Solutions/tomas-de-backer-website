@@ -6,7 +6,7 @@
           src="/img/tomas/tomas.jpg"
           format="webp"
           :img-attrs="{
-            class: 'rounded-lg shadow-lg max-h-100 md:max-h-450px mx-auto m-4',
+            class: 'rounded-lg shadow-lg max-h-100 md:max-h-400px mx-auto m-4',
             alt: $t('img-alt.tomas'),
           }"
         />
