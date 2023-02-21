@@ -18,6 +18,7 @@ async function onSubmit() {
   failed.value = false
 
   const isValid = form.value?.reportValidity()
+  console.log(isValid)
   if (!isValid)
     return
 
@@ -71,6 +72,7 @@ async function onSubmit() {
         </div>
 
         <form
+          ref="form"
           name="contact"
           class="w-full text-primary w-full"
           netlify
