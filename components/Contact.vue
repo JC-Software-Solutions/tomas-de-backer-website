@@ -23,7 +23,7 @@ async function onSubmit() {
 
   try {
     const formData = new FormData(form.value)
-    await fetch('/', {
+    await $fetch('/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
