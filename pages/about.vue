@@ -27,7 +27,7 @@ useSeoMeta({
         </div>
         <div class="my-auto mx-auto">
           <NuxtPicture
-            src="/img/tomas/tomas-eddy.jpg"
+            src="/img/tomas/tomas-eddy-karting.jpg"
             format="webp"
             :img-attrs="{
               'class': 'article-img',
@@ -41,11 +41,11 @@ useSeoMeta({
       <section class="flex flex-wrap flex-col-reverse xl:flex-row justify-center xl:justify-around gap-5 md:mt-5 lg:mt-10">
         <div class="my-auto mx-auto">
           <NuxtPicture
-            src="/img/tomas/tomas-sarah.jpg"
+            src="/img/action/karting.jpg"
             format="webp"
             :img-attrs="{
               'class': 'article-img',
-              'alt': $t('img-alt.tomas-sarah'),
+              'alt': $t('img-alt.karting'),
               'data-aos': 'fade-right',
             }"
           />
@@ -74,11 +74,11 @@ useSeoMeta({
         </div>
         <div class="my-auto mx-auto">
           <NuxtPicture
-            src="/img/action/karting.jpg"
+            src="/img/action/mazda.jpg"
             format="webp"
             :img-attrs="{
               'class': 'article-img',
-              'alt': $t('img-alt.karting'),
+              'alt': $t('img-alt.mazda'),
               'data-aos': 'fade-left',
             }"
           />
@@ -88,12 +88,12 @@ useSeoMeta({
       <section class="flex flex-wrap flex-col-reverse xl:flex-row justify-center xl:justify-around gap-5 md:mt-5 lg:mt-10">
         <div class="my-auto mx-auto">
           <NuxtPicture
-            src="/img/tomas/tomas-family.jpg"
+            src="/img/action/fiesta.jpg"
             format="webp"
             :img-attrs="{
               'class': 'article-img',
-              'alt': $t('img-alt.tomas-family'),
-              'data-aos': 'fade-right',
+              'alt': $t('img-alt.fiesta'),
+              'data-aos': 'fade-left',
             }"
           />
         </div>
@@ -112,9 +112,34 @@ useSeoMeta({
           </p>
         </div>
       </section>
+
+      <div class="flex justify-between align-center mt-10">
+        <div class="w-2/3">
+          <NuxtPicture
+            src="/img/tomas/tomas-family.jpg"
+            format="webp"
+            :img-attrs="{
+              'class': 'rounded-lg shadow-lg ml-5 max-w-650px',
+              'alt': $t('img-alt.tomas-family'),
+              'data-aos': 'fade-right',
+            }"
+          />
+        </div>
+        <div class="w-1/3">
+          <NuxtPicture
+            src="/img/tomas/tomas-sarah.jpg"
+            format="webp"
+            :img-attrs="{
+              'class': 'rounded-lg shadow-lg mr-5 my-auto',
+              'alt': $t('img-alt.tomas-sarah'),
+              'data-aos': 'fade-left',
+            }"
+          />
+        </div>
+      </div>
     </article>
 
-    <div class="flex flex-wrap mt-16">
+    <div class="flex flex-wrap mt-16 align-center">
       <div class="w-full xl:w-1/2 text-sm md:text-base" data-aos="fade-right">
         <h3 class="font-sans font-weight-bold text-xl md:text-4xl py-2 capitalize" data-aos="fade-right">
           {{ $t('palmares') }}
@@ -133,11 +158,11 @@ useSeoMeta({
 
       <div class="w-full xl:w-1/2" data-aos="fade-left">
         <NuxtPicture
-          src="/img/tomas/podium.jpg"
+          src="/img/tomas/tomas-p1.jpg"
           format="webp"
           :img-attrs="{
-            class: 'rounded-lg shadow-lg mx-auto md:mt-10 md:max-w-700px w-auto',
-            alt: $t('img-alt.podium'),
+            class: 'rounded-lg shadow-lg md:float-right mt-24 md:max-w-600px w-auto',
+            alt: $t('img-alt.tomas-p1'),
           }"
         />
       </div>

@@ -16,8 +16,8 @@ defineProps<{
     <thead>
       <tr class="text-secondary font-normal text-xs md:text-sm lg:text-base">
         <th />
-        <th>{{ $t('position') }}</th>
-        <th>{{ $t('position', { type: '🇧🇪' }) }}</th>
+        <th>#{{ $t('general') }}</th>
+        <th>#{{ $t('belgium') }}</th>
         <th>{{ $t('kph') }}</th>
         <th>{{ $t('laps') }}</th>
         <th>{{ $t('fastest-lap') }}</th>

@@ -1,12 +1,12 @@
 <template>
   <section class="flex justify-center items-center flex-wrap md:flex-nowrap flex-row text-white py-20">
     <div class="w-full md:w-2/5">
-      <div class="mt-12 md:mt-0 mx-auto p-4 xs:p-0 md:p-12" data-aos="fade-right">
+      <div class="mt-12 md:mt-0 mx-auto  p-4 xs:p-0 md:p-12" data-aos="fade-right">
         <NuxtPicture
           src="/img/tomas/tomas.jpg"
           format="webp"
           :img-attrs="{
-            class: 'rounded-lg shadow-lg',
+            class: 'rounded-lg shadow-lg max-h-100 md:max-h-450px mx-auto m-4',
             alt: $t('img-alt.tomas'),
           }"
         />
