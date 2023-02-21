@@ -78,7 +78,7 @@ async function onSubmit() {
           name="contact"
           class="w-full text-primary w-full"
           netlify
-          data-netlify-honeypot="bot-field"
+          netlify-honeypot="bot-field"
         >
           <input type="hidden" name="form-name" value="contact">
           <p hidden>
