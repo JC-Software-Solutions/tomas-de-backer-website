@@ -1,8 +1,6 @@
 import messages from './locales'
 
 export default defineNuxtConfig({
-  ssr: false,
-
   nitro: {
     prerender: {
       routes: ['/sitemap.xml'],
