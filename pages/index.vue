@@ -43,6 +43,8 @@ useSeoMeta({
     <Results />
     <NextRace v-if="nextRace" :next-race="nextRace" />
     <Sponsors :data="sponsors ? sponsors.body : []" />
-    <Contact />
+    <ClientOnly>
+      <Contact />
+    </ClientOnly>
   </div>
 </template>
