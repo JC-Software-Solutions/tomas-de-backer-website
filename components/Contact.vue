@@ -1,3 +1,41 @@
+<script lang="ts" setup>
+const success = ref(false)
+const failed = ref(false)
+
+const formData = reactive({
+  name: '',
+  email: '',
+  message: '',
+})
+
+const notAllRequiredFieldsFilledIn = computed(() => {
+  return !formData.name || !formData.email || !formData.message
+})
+
+const form = ref<HTMLFormElement>()
+async function onSubmit() {
+  success.value = false
+  failed.value = false
+
+  const isValid = form.value?.reportValidity()
+  if (!isValid)
+    return
+
+  try {
+    await fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString(),
+    })
+    success.value = true
+  }
+  catch (err) {
+    console.error(err)
+    failed.value = true
+  }
+}
+</script>
+
 <template>
   <section id="contact" class="px-4 py-20">
     <div class="flex justify-around">
@@ -35,19 +73,15 @@
         <form
           name="contact"
           class="w-full text-primary w-full"
-          data-netlify="true"
+          netlify
           data-netlify-honeypot="bot-field"
         >
-          <input type="hidden" name="form-name" value="contact" />
-          <p hidden>
-            <label>Don’t fill this out: <input name="bot-field" /></label>
-          </p>
-
+          <input type="hidden" name="form-name" value="contact">
           <input v-model="formData.name" name="name" type="text" :placeholder="$t('name')" class="w-full p-2 mb-2 rounded-md" required>
           <input v-model="formData.email" name="email" type="email" placeholder="e-mail" class="w-full p-2 mb-2 rounded-md" required>
           <textarea v-model="formData.message" name="message" :placeholder="$t('message')" class="w-full p-2 mb-2 rounded-md min-h-5" rows="5" required />
           <div class="text-center">
-            <button @click.prevent="onSubmit" :disabled="notAllRequiredFieldsFilledIn" class="btn btn-ghost w-full md:w-4/5 text-white capitalize">
+            <button :disabled="notAllRequiredFieldsFilledIn" class="btn btn-ghost w-full md:w-4/5 text-white capitalize" @click.prevent="onSubmit">
               {{ $t('send') }}
             </button>
           </div>
@@ -56,41 +90,3 @@
     </div>
   </section>
 </template>
-
-<script lang="ts" setup>
-const success = ref(false);
-const failed = ref(false);
-
-const formData = reactive({
-  name: '',
-  email: '',
-  message: '',
-})
-
-const notAllRequiredFieldsFilledIn = computed(() => {
-  return !formData.name || !formData.email || !formData.message
-})
-
-const form = ref<HTMLFormElement>();
-async function onSubmit() {
-  success.value = false;
-  failed.value = false;
-
-  const isValid = form.value?.reportValidity();
-  if (!isValid) {
-    return;
-  }
-
-  try {
-    await fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(formData).toString()
-    });
-    success.value = true;
-  } catch (err) {
-    console.error(err);
-    failed.value = true;
-  }
-}
-</script>
