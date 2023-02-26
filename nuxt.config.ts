@@ -23,6 +23,18 @@ export default defineNuxtConfig({
     'nuxt-windicss',
     '@nuxtjs/google-fonts',
     'nuxt-icon',
+    ['nuxt-mail', {
+      message: {
+        to: 'jclaessens97@hotmail.com',
+      },
+      smtp: {
+        service: 'gmail',
+        auth: {
+          user: 'claessej@gmail.com',
+          pass: process.env.EMAIL_PASS,
+        },
+      },
+    }],
   ],
 
   googleFonts: {

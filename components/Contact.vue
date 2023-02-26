@@ -12,6 +12,7 @@ const notAllRequiredFieldsFilledIn = computed(() => {
   return !formData.name || !formData.email || !formData.message
 })
 
+const mail = useMail()
 const form = ref<HTMLFormElement>()
 async function onSubmit() {
   success.value = false
@@ -22,13 +23,10 @@ async function onSubmit() {
     return
 
   try {
-    const formData = new FormData(form.value)
-    await $fetch('/', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
-      body: new URLSearchParams(formData).toString(),
+    mail.send({
+      from: `${formData.name} <${formData.email}>`,
+      subject: 'Nieuw bericht tomasdebacker.be',
+      text: formData.message,
     })
     success.value = true
   }
@@ -36,6 +34,22 @@ async function onSubmit() {
     console.error(err)
     failed.value = true
   }
+
+  // try {
+  //   const formData = new FormData(form.value)
+  //   await $fetch('/', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/x-www-form-urlencoded',
+  //     },
+  //     body: new URLSearchParams(formData).toString(),
+  //   })
+  //   success.value = true
+  // }
+  // catch (err) {
+  //   console.error(err)
+  //   failed.value = true
+  // }
 }
 </script>
 
@@ -79,7 +93,7 @@ async function onSubmit() {
           netlify
         >
           >
-          <input type="hidden" name="form-name" value="contact">
+          <!-- <input type="hidden" name="form-name" value="contact"> -->
           <!-- <p hidden>
             <label>Don’t fill this out: <input name="bot-field"></label>
           </p> -->
