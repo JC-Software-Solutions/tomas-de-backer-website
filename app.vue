@@ -45,6 +45,18 @@ useHead({
       name: 'theme-color',
       content: '#0f172a',
     },
+    {
+      name: 'og:image',
+      content: 'https://tomasdebacker.be/img/logo/social-preview.png',
+    },
+    {
+      name: 'og:image:width',
+      content: 1200,
+    },
+    {
+      name: 'og:image:height',
+      content: 627,
+    },
   ],
 })
 
