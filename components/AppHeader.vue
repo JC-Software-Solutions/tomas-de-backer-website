@@ -25,7 +25,8 @@ function toggleMenu() {
 
 const route = useRoute()
 watch(route, () => {
-  if (visible.value) toggleMenu()
+  if (visible.value)
+    toggleMenu()
 })
 
 const { $localePath } = useNuxtApp()
@@ -67,7 +68,7 @@ function findLocalePath(page: string) {
     >
       <div>
         <NuxtLink :to="findLocalePath('index')">
-          <NuxtImg src="/img/logo/TDB.svg" alt="Tomas De Backer logo" class="h-8" />
+          <img src="/img/logo/TDB.svg" alt="Tomas De Backer logo" class="h-8">
         </NuxtLink>
       </div>
 
