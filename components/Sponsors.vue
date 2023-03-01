@@ -21,7 +21,7 @@ defineProps<{
         <NuxtLink v-if="sponsor.url" :to="sponsor.url" target="_blank" rel="noopener noreferrer" class="p-2 mx-5 my-5" data-aos="zoom-in">
           <NuxtImg :src="sponsor.image" format="webp" :alt="`${sponsor.name} sponsor logo`" class="mx-auto" />
         </NuxtLink>
-        <div v-else class="p-2 mx-5 my-5" data-aos="zoom-in">
+        <div v-else class="p-2 mx-5 my-auto" data-aos="zoom-in">
           <NuxtImg :src="sponsor.image" format="webp" :alt="`${sponsor.name} sponsor logo`" class="mx-auto" />
         </div>
       </template>
