@@ -33,5 +33,30 @@
     "name": "The Garden Mechanic",
     "url": "",
     "image": "/img/sponsors/the-garden-mechanic.png"
+  },
+  {
+    "name": "Bike2Fix",
+    "url": "https://www.bike2fix.be/",
+    "image": "/img/sponsors/Bike2Fix.jpg"
+  },
+  {
+    "name": "Cerno",
+    "url": "https://www.cerno.be/",
+    "image": "/img/sponsors/cerno.png"
+  },
+  {
+    "name": "Imperium Tyre Center",
+    "url": "",
+    "image": "/img/sponsors/imperium-tyre-center.png"
+  },
+  {
+    "name": "Kamard cars",
+    "url": "https://kamardcars.be/",
+    "image": "/img/sponsors/kamard-cars.jpg"
+  },
+  {
+    "name": "Retrodor",
+    "url": "",
+    "image": "/img/sponsors/retrodor.jpg"
   }
 ]
