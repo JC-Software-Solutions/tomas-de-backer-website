@@ -113,24 +113,24 @@ useSeoMeta({
         </div>
       </section>
 
-      <div class="flex justify-between align-center mt-10">
-        <div class="w-2/3">
+      <div class="flex flex-row flex-wrap justify-between items-center mt-5 gap-y-5">
+        <div class="w-full md:w-1/2 md:px-5">
           <NuxtPicture
             src="/img/tomas/tomas-family.jpg"
             format="webp"
             :img-attrs="{
-              'class': 'rounded-lg shadow-lg ml-5 max-w-650px',
+              'class': 'rounded-lg shadow-lg w-full',
               'alt': $t('img-alt.tomas-family'),
               'data-aos': 'fade-right',
             }"
           />
         </div>
-        <div class="w-1/3">
+        <div class="w-full md:w-1/2 md:px-5">
           <NuxtPicture
             src="/img/tomas/tomas-sarah.jpg"
             format="webp"
             :img-attrs="{
-              'class': 'rounded-lg shadow-lg mr-5 my-auto',
+              'class': 'rounded-lg shadow-lg',
               'alt': $t('img-alt.tomas-sarah'),
               'data-aos': 'fade-left',
             }"
