@@ -35,6 +35,7 @@ export default defineNuxtConfig({
         },
       },
     }],
+    'nuxt-gtag',
   ],
 
   googleFonts: {
@@ -75,5 +76,9 @@ export default defineNuxtConfig({
 
   image: {
     provider: 'netlify',
+  },
+
+  gtag: {
+    id: 'G-41R2GEN8KY',
   },
 })
