@@ -17,8 +17,9 @@ const nextRace = computed(() => {
     return distA - distB
   })
   const [next] = sortedCalendar.filter((cal) => {
-    const calDate = new Date(cal.dates[0]).getTime()
-    return calDate - now > 0
+    const calDate = new Date(cal.dates[1])
+    calDate.setDate(calDate.getDate() + 1)
+    return calDate.getTime() - now > 0
   })
 
   return next
