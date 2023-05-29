@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-const { data: results } = useAsyncData('results', async () => queryContent('/results-2022').findOne())
+const { data: results } = useAsyncData('results', async () => queryContent('/results-2023').findOne())
 </script>
 
 <template>
   <section id="results" class="px-2 py-20">
     <h3 class="font-sans font-weight-bold text-xl md:text-4xl py-2 capitalize" data-aos="fade-right">
-      {{ $t('results') }} (2022)
+      {{ $t('results') }} (2023)
     </h3>
 
     <ClientOnly>
