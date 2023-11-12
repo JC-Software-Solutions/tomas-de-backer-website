@@ -98,5 +98,71 @@
       "fastestLap": "1:56:086"
       }
     ]
+  },
+      {
+    "title": "Race 4 - Jack's Racing Days",
+    "championship": "Ford Fiesta Sprint Cup",
+    "track": "Assen, NL",
+    "startDate": "2023-08-11",
+    "endDate": "2023-08-13",
+    "sessions": [
+      {
+      "name": "qualification",
+      "position": 1,
+      "positionBelgium": 1,
+      "kph": 133.48,
+      "laps": 7,
+      "fastestLap": "2:02.854"
+      },
+      {
+      "name": "race 1",
+      "position": 2,
+      "positionBelgium": 1,
+      "kph": 130.05,
+      "laps": 15,
+      "fastestLap": "2:04:141"
+      },
+      {
+      "name": "race 2",
+      "position": 1,
+      "positionBelgium": 1,
+      "kph": 111.36,
+      "laps": 11,
+      "fastestLap": "2:03:349"
+      }
+    ]
+  },
+        {
+    "title": "Race 5 - BetCity Trophy of the Dunes",
+    "championship": "Ford Fiesta Sprint Cup",
+    "track": "Zandvoort, NL",
+    "startDate": "2023-09-15",
+    "endDate": "2023-09-17",
+    "sessions": [
+      {
+      "name": "qualification",
+      "position": 1,
+      "positionBelgium": 1,
+      "kph": 126.25,
+      "laps": 8,
+      "fastestLap": "2:01.449"
+      },
+      {
+      "name": "race 1",
+      "position": 1,
+      "positionBelgium": 1,
+      "kph": 124.87,
+      "laps": 15,
+      "fastestLap": "2:01:702"
+      },
+      {
+      "name": "race 2",
+      "position": 1,
+      "positionBelgium": 1,
+      "kph": 125.21,
+      "laps": 15,
+      "fastestLap": "2:01:400"
+      }
+    ]
   }
 ]
