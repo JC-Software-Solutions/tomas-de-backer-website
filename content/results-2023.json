@@ -164,5 +164,38 @@
       "fastestLap": "2:01:400"
       }
     ]
-  }
+  },
+    {
+    "title": "Race 6 - Spa Racing Festival",
+    "championship": "Ford Fiesta Sprint Cup",
+    "track": "Spa Francorchamps, BE",
+    "startDate": "2023-10-14",
+    "endDate": "2023-10-15",
+    "sessions": [
+      {
+      "name": "qualification",
+      "position": 1,
+      "positionBelgium": 1,
+      "kph": 139.60,
+      "laps": 7,
+      "fastestLap": "3:00.637"
+      },
+      {
+      "name": "race 1",
+      "position": 3,
+      "positionBelgium": 1,
+      "kph": 131.10,
+      "laps": 14,
+      "fastestLap": "3:13:785"
+      },
+      {
+      "name": "race 2",
+      "position": 1,
+      "positionBelgium": 1,
+      "kph": 132.30,
+      "laps": 12,
+      "fastestLap": "3:10:582"
+      }
+    ]
+  },
 ]
