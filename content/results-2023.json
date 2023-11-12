@@ -31,5 +31,38 @@
       "fastestLap": "2:01:257"
       }
     ]
+  },
+    {
+    "title": "Race 1 - Spa Euro Races",
+    "championship": "Ford Fiesta Sprint Cup",
+    "track": "Spa Francorchamps, BE",
+    "startDate": "2023-06-02",
+    "endDate": "2023-06-04",
+    "sessions": [
+      {
+      "name": "qualification",
+      "position": 2,
+      "positionBelgium": 1,
+      "kph": 139.00,
+      "laps": 6,
+      "fastestLap": "3:01.460"
+      },
+      {
+      "name": "race 1",
+      "position": 1,
+      "positionBelgium": 1,
+      "kph": 139.30,
+      "laps": 11,
+      "fastestLap": "3:01:071"
+      },
+      {
+      "name": "race 2",
+      "position": 2,
+      "positionBelgium": 1,
+      "kph": 139.30,
+      "laps": 13,
+      "fastestLap": "3:01:061"
+      }
+    ]
   }
 ]
