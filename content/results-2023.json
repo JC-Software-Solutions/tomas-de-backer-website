@@ -67,7 +67,7 @@
   },
   
     {
-    "title": "Race 3 - Spa Euro Races",
+    "title": "Race 3 - Zolder Supercarr Madness",
     "championship": "Ford Fiesta Sprint Cup",
     "track": "Zolder, BE",
     "startDate": "2023-07-07",
@@ -77,7 +77,7 @@
       "name": "qualification",
       "position": 2,
       "positionBelgium": 1,
-      "kph": 00.00,
+      "kph": 1.00,
       "laps": 9,
       "fastestLap": "1:56.768"
       },
