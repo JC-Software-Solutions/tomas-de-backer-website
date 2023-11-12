@@ -198,4 +198,37 @@
       }
     ]
   },
+    {
+    "title": "Race 7 - Supercar Madness Finaleraces",
+    "championship": "Ford Fiesta Sprint Cup",
+    "track": "Assen, NL",
+    "startDate": "2023-10-28",
+    "endDate": "2023-10-29",
+    "sessions": [
+      {
+      "name": "qualification",
+      "position": 2,
+      "positionBelgium": 1,
+      "kph": 125.81,
+      "laps": 9,
+      "fastestLap": "2:10.336"
+      },
+      {
+      "name": "race 1",
+      "position": 4,
+      "positionBelgium": 1,
+      "kph": 124.60,
+      "laps": 14,
+      "fastestLap": "2:08:405"
+      },
+      {
+      "name": "race 2",
+      "position": 6,
+      "positionBelgium": 1,
+      "kph": 103.21,
+      "laps": 12,
+      "fastestLap": "2:03:909"
+      }
+    ]
+  }
 ]
