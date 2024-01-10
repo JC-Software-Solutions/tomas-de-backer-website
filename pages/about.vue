@@ -107,9 +107,31 @@ useSeoMeta({
           <p>
             {{ $t('about-p10') }}
           </p>
+        </div>
+      </section>
+
+      <section class="flex flex-wrap justify-center xl:justify-around gap-5 md:mt-5 lg:mt-10">
+        <div class="w-full lg:w-3/5 my-auto mx-auto" data-aos="fade-right">
+          <p>
+            {{ $t('about-p11') }}
+          </p>
+          <p>
+            {{ $t('about-p12') }}
+          </p>
           <p class="text-secondary font-weight-bold text-xl">
             {{ $t('about-to-the-top') }}
           </p>
+        </div>
+        <div class="my-auto mx-auto">
+          <NuxtPicture
+            src="/img/tomas/m2.jpg"
+            format="webp"
+            :img-attrs="{
+              'class': 'article-img',
+              'alt': $t('img-alt.m2'),
+              'data-aos': 'fade-left',
+            }"
+          />
         </div>
       </section>
 
