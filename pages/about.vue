@@ -88,7 +88,7 @@ useSeoMeta({
       <section class="flex flex-wrap flex-col-reverse xl:flex-row justify-center xl:justify-around gap-5 md:mt-5 lg:mt-10">
         <div class="my-auto mx-auto">
           <NuxtPicture
-            src="/img/action/fiesta.jpg"
+            src="/img/action/fiesta-1.jpg"
             format="webp"
             :img-attrs="{
               'class': 'article-img',
@@ -116,7 +116,7 @@ useSeoMeta({
       <div class="flex flex-row flex-wrap justify-between items-center mt-5 gap-y-5">
         <div class="w-full md:w-1/2 md:px-5">
           <NuxtPicture
-            src="/img/tomas/tomas-family.jpg"
+            src="/img/tomas/tomas-friends-family.jpg"
             format="webp"
             :img-attrs="{
               'class': 'rounded-lg shadow-lg w-full',
