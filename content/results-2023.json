@@ -31,5 +31,203 @@
       "fastestLap": "2:01:257"
       }
     ]
+  },
+    {
+    "title": "Race 2 - Spa Euro Races",
+    "championship": "Ford Fiesta Sprint Cup",
+    "track": "Spa Francorchamps, BE",
+    "startDate": "2023-06-02",
+    "endDate": "2023-06-04",
+    "sessions": [
+      {
+      "name": "qualification",
+      "position": 2,
+      "positionBelgium": 1,
+      "kph": 139.00,
+      "laps": 6,
+      "fastestLap": "3:01.460"
+      },
+      {
+      "name": "race 1",
+      "position": 1,
+      "positionBelgium": 1,
+      "kph": 139.30,
+      "laps": 11,
+      "fastestLap": "3:01:071"
+      },
+      {
+      "name": "race 2",
+      "position": 2,
+      "positionBelgium": 1,
+      "kph": 139.30,
+      "laps": 13,
+      "fastestLap": "3:01:061"
+      }
+    ]
+  },
+    {
+    "title": "Race 3 - Zolder Supercar Madness",
+    "championship": "Ford Fiesta Sprint Cup",
+    "track": "Zolder, BE",
+    "startDate": "2023-07-07",
+    "endDate": "2023-07-09",
+    "sessions": [
+      {
+      "name": "qualification",
+      "position": 2,
+      "positionBelgium": 1,
+      "kph": 1.00,
+      "laps": 9,
+      "fastestLap": "1:56.768"
+      },
+      {
+      "name": "race 1",
+      "position": 1,
+      "positionBelgium": 1,
+      "kph": 108.75,
+      "laps": 14,
+      "fastestLap": "1:55:781"
+      },
+      {
+      "name": "race 2",
+      "position": 1,
+      "positionBelgium": 1,
+      "kph": 122.71,
+      "laps": 16,
+      "fastestLap": "1:56:086"
+      }
+    ]
+  },
+      {
+    "title": "Race 4 - Jack's Racing Days",
+    "championship": "Ford Fiesta Sprint Cup",
+    "track": "Assen, NL",
+    "startDate": "2023-08-11",
+    "endDate": "2023-08-13",
+    "sessions": [
+      {
+      "name": "qualification",
+      "position": 1,
+      "positionBelgium": 1,
+      "kph": 133.48,
+      "laps": 7,
+      "fastestLap": "2:02.854"
+      },
+      {
+      "name": "race 1",
+      "position": 2,
+      "positionBelgium": 1,
+      "kph": 130.05,
+      "laps": 15,
+      "fastestLap": "2:04:141"
+      },
+      {
+      "name": "race 2",
+      "position": 1,
+      "positionBelgium": 1,
+      "kph": 111.36,
+      "laps": 11,
+      "fastestLap": "2:03:349"
+      }
+    ]
+  },
+        {
+    "title": "Race 5 - BetCity Trophy of the Dunes",
+    "championship": "Ford Fiesta Sprint Cup",
+    "track": "Zandvoort, NL",
+    "startDate": "2023-09-15",
+    "endDate": "2023-09-17",
+    "sessions": [
+      {
+      "name": "qualification",
+      "position": 1,
+      "positionBelgium": 1,
+      "kph": 126.25,
+      "laps": 8,
+      "fastestLap": "2:01.449"
+      },
+      {
+      "name": "race 1",
+      "position": 1,
+      "positionBelgium": 1,
+      "kph": 124.87,
+      "laps": 15,
+      "fastestLap": "2:01:702"
+      },
+      {
+      "name": "race 2",
+      "position": 1,
+      "positionBelgium": 1,
+      "kph": 125.21,
+      "laps": 15,
+      "fastestLap": "2:01:400"
+      }
+    ]
+  },
+    {
+    "title": "Race 6 - Spa Racing Festival",
+    "championship": "Ford Fiesta Sprint Cup",
+    "track": "Spa Francorchamps, BE",
+    "startDate": "2023-10-14",
+    "endDate": "2023-10-15",
+    "sessions": [
+      {
+      "name": "qualification",
+      "position": 1,
+      "positionBelgium": 1,
+      "kph": 139.60,
+      "laps": 7,
+      "fastestLap": "3:00.637"
+      },
+      {
+      "name": "race 1",
+      "position": 3,
+      "positionBelgium": 1,
+      "kph": 131.10,
+      "laps": 14,
+      "fastestLap": "3:13:785"
+      },
+      {
+      "name": "race 2",
+      "position": 1,
+      "positionBelgium": 1,
+      "kph": 132.30,
+      "laps": 12,
+      "fastestLap": "3:10:582"
+      }
+    ]
+  },
+    {
+    "title": "Race 7 - Supercar Madness Finaleraces",
+    "championship": "Ford Fiesta Sprint Cup",
+    "track": "Assen, NL",
+    "startDate": "2023-10-28",
+    "endDate": "2023-10-29",
+    "sessions": [
+      {
+      "name": "qualification",
+      "position": 2,
+      "positionBelgium": 1,
+      "kph": 125.81,
+      "laps": 9,
+      "fastestLap": "2:10.336"
+      },
+      {
+      "name": "race 1",
+      "position": 4,
+      "positionBelgium": 1,
+      "kph": 124.60,
+      "laps": 14,
+      "fastestLap": "2:08:405"
+      },
+      {
+      "name": "race 2",
+      "position": 6,
+      "positionBelgium": 1,
+      "kph": 103.21,
+      "laps": 12,
+      "fastestLap": "2:03:909"
+      }
+    ]
   }
 ]
