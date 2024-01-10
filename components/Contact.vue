@@ -58,11 +58,11 @@ async function onSubmit() {
     <div class="flex justify-around">
       <div class="hidden w-1/2 md:block" data-aos="fade-right">
         <NuxtPicture
-          src="/img/action/spa-rain-1.jpg"
+          src="/img/action/zolder-heuvel.jpg"
           format="webp"
           :img-attrs="{
             class: 'rounded-lg shadow-lg mx-auto max-h-1xl',
-            alt: $t('img-alt.spa-rain'),
+            alt: $t('img-alt.zolder-heuvel'),
           }"
         />
       </div>
