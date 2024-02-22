@@ -22,7 +22,7 @@ function onVideoLoaded() {
     <div v-show="!loading">
       <!-- Background video -->
       <video ref="video" autoplay muted loop cover playsinline preload="auto" class="mt-16" @loadeddata="onVideoLoaded">
-        <source src="/video/hero.mp4" type="video/mp4">
+        <source src="/video/hero_2024.mp4" type="video/mp4">
       </video>
 
       <!-- Overlay -->
