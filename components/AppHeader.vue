@@ -2,7 +2,7 @@
 const socials = ref([
   {
     name: 'instagram',
-    url: 'https://www.instagram.com/tomasdebacker/',
+    url: 'https://www.instagram.com/tomas.debacker/',
   },
   {
     name: 'facebook',
