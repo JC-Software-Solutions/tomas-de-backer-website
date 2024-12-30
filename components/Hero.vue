@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { useBlockScrolling } from '~~/composables/useBlockScrolling'
+
 const loading = ref(false)
 
 const video = ref<HTMLVideoElement>()
@@ -13,6 +15,8 @@ function onVideoLoaded() {
     loading.value = false
   }, 500)
 }
+
+useBlockScrolling(loading)
 </script>
 
 <template>

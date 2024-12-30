@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import AOS from 'aos'
+import { useBlockScrolling } from './composables/useBlockScrolling'
 
 onMounted(() => {
   AOS.init({
@@ -68,6 +69,8 @@ nuxtApp.hook('page:start', () => {
 nuxtApp.hook('page:finish', () => {
   loading.value = false
 })
+
+useBlockScrolling(loading)
 </script>
 
 <template>
