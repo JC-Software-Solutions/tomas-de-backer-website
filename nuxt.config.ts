@@ -18,7 +18,7 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxt/content',
-    '@nuxt/image-edge',
+    '@nuxt/image',
     '@nuxtjs/i18n',
     'nuxt-windicss',
     '@nuxtjs/google-fonts',
@@ -75,7 +75,7 @@ export default defineNuxtConfig({
   },
 
   image: {
-    provider: 'netlify',
+    // provider: 'netlify',
   },
 
   gtag: {

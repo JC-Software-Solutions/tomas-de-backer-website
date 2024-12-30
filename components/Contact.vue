@@ -34,22 +34,6 @@ async function onSubmit() {
     console.error(err)
     failed.value = true
   }
-
-  // try {
-  //   const formData = new FormData(form.value)
-  //   await $fetch('/', {
-  //     method: 'POST',
-  //     headers: {
-  //       'Content-Type': 'application/x-www-form-urlencoded',
-  //     },
-  //     body: new URLSearchParams(formData).toString(),
-  //   })
-  //   success.value = true
-  // }
-  // catch (err) {
-  //   console.error(err)
-  //   failed.value = true
-  // }
 }
 </script>
 
@@ -58,7 +42,7 @@ async function onSubmit() {
     <div class="flex justify-around">
       <div class="hidden w-1/2 md:block" data-aos="fade-right">
         <NuxtPicture
-          src="/img/action/zolder-heuvel.jpg"
+          src="/img/action/assen-fiesta.jpg"
           format="webp"
           :img-attrs="{
             class: 'rounded-lg shadow-lg mx-auto max-h-1xl',

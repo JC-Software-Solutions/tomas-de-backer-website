@@ -3,10 +3,10 @@
     <div class="w-full md:w-2/5">
       <div class="mt-12 md:mt-0 mx-auto  p-4 xs:p-0 md:p-12" data-aos="fade-right">
         <NuxtPicture
-          src="/img/tomas/tomas.jpg"
+          src="/img/tomas/tomas-1.jpg"
           format="webp"
           :img-attrs="{
-            class: 'rounded-lg shadow-lg max-h-100 md:max-h-400px mx-auto m-4',
+            class: 'rounded-lg shadow-lg max-h-100 md:max-h-500px mx-auto m-4',
             alt: $t('img-alt.tomas'),
           }"
         />

@@ -124,6 +124,11 @@ function findLocalePath(page: string) {
             </NuxtLink>
           </li>
           <li>
+            <NuxtLink class="link" :to="findLocalePath('tdb-racing')">
+              {{ $t('tdb-racing') }}
+            </NuxtLink>
+          </li>
+          <li>
             <NuxtLink class="link" :to="findLocalePath('results')">
               {{ $t('results') }}
             </NuxtLink>
