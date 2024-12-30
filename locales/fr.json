@@ -1,7 +1,7 @@
 {
   "seo": {
     "index-title": "Tomas De Backer – Pilote automobile belge {separator} Site web officiel",
-    "index-description": "Tomas de Backer est un pilote automobile belge et champion de la Ford Fiesta Sprint Cup Belgium 2022. Découvrez ici son site web officiel.",
+    "index-description": "Tomas de Backer est un pilote automobile belge et champion de la Ford Fiesta Sprint Cup Benelux 2022, 2023 & 2024. Découvrez ici son site web officiel.",
     "about-title": "Tomas De Backer {separator} Carrière {separator} Site web officiel",
     "about-description": "Tomas De Backer est prêt à tout donner pour mériter le haut du classement en sport automobile. Découvrez ici les plus grands moments de sa carrière.",
     "calendar-title": "Tomas De Backer {separator} Calendrier {separator} Site web officiel",
@@ -15,7 +15,9 @@
   },
   "img-alt": {
     "tomas": "Tomas De Backer en combinaison de course",
-    "tomas-eddy": "Eddy De Backer à côté du kart avec Tomas De Backer",
+    "tomas-eddy-karting": "Eddy De Backer à côté du kart avec Tomas De Backer",
+    "tomas-eddy": "Tomas De Backer avec son père Eddy De Backer",
+    "tomas-eddy-2": "Tomas De Backer enlace son père Eddy De Backer",
     "tomas-sarah": "Tomas De Backer est embrassé par sa petite amie Sarah Maes après une victoire",
     "tomas-family": "Tomas De Backer posant avec sa famille et ses amis devant le pitbox",
     "tomas-p1": "Tomas De Backer applaudit sa première place",
@@ -25,8 +27,9 @@
     "podium": "Tomas De Backer sur la plus haute marche du podium",
     "zolder-heuvel": "Tomas conduit sa Ford Fiesta à Zolder"
   },
-  "hero-title": "Champion 2023 Ford Fiesta Sprint Cup Benelux",
+  "hero-title": "Champion 2022, 2023 & 2024 Ford Fiesta Sprint Cup Benelux",
   "about-tomas": "à propos de Tomas De Backer",
+  "tdb-racing": "TDB Racing",
   "results": "résultats",
   "calendar": "calendrier",
   "sponsors": "sponsors",
@@ -55,7 +58,7 @@
   "contact-success": "Merci pour votre message. Je vous répondrai dès que possible.",
   "contact-failed": "Une erreur est survenue. Veuillez réessayer.",
   "about-excerpt-title": "Tomas De Backer",
-  "about-excerpt": "Salut, je suis Tomas de Backer, un pilote belge prêt à tout donner pour obtenir les meilleurs résultats en sport automobile (international). Quand j’avais 2 ans, j’ai visité les circuits de Zolder et de Spa-Francorchamps, et ça m’a tout de suite plu. Depuis lors, j’ai développé une carrière prometteuse en sport automobile, dont le titre en Ford Fiesta Sprint Cup Belgium 2022 en guise de cerise sur le gâteau.",
+  "about-excerpt": "Salut, je suis Tomas de Backer, un pilote belge prêt à tout donner pour obtenir les meilleurs résultats en sport automobile (international). Quand j’avais 2 ans, j’ai visité les circuits de Zolder et de Spa-Francorchamps, et ça m’a tout de suite plu. Depuis lors, j’ai développé une carrière prometteuse en sport automobile, dont le titre en Ford Fiesta Sprint Cup Belgium 2022, 2023 & 2024 en guise de cerise sur le gâteau.",
   "about-discover-full": "Voir la bio complète",
   "check-all-results": "Voir tous les résultats",
   "check-all-races": "Rencontrer nos partenaires",
@@ -70,5 +73,13 @@
   "about-p8": "Dès la saison 2020, j’ai pris le départ de la Ford Fiesta Sprint Cup Belgium, une coupe connue pour lancer la carrière des jeunes talents. J’ai décroché le titre Junior durant ma première saison et j’ai pu terminer vice-champion au classement général, ce qui a signé le début d'une belle période pour moi.",
   "about-p9": "Pendant la saison 2021, j’ai malheureusement rencontré de nombreux problèmes mécaniques. De ce fait, je n’ai pas pu viser plus haut que la 3e place au classement général, mais j’ai tout de même décroché la plupart des victoires et des pole positions.",
   "about-p10": "La saison 2022 a représenté la récompense ultime du dur travail effectué les saisons précédentes, en décrochant aussi bien le titre de champion de Belgique, que celui de champion des juniors belges. J’ai aussi pu inscrire mon nom au palmarès de la Dutch Belgium Superstar. Avec 10 victoires et 13 places sur le podium sur les 14 courses, c’est un résultat sans précédent dans l'histoire de la Fiesta Cup belge.",
-  "about-to-the-top": "Let’s race to the top!"
+  "about-p11": "Lors de la saison 2023, un championnat non officiel de la Ford Fiesta Sprint Cup Benelux a été organisé pour la première fois. Plus de classements séparés, mais un seul classement général. Après 7 weekends de course et 14 courses, j'ai pu me couronner champion à nouveau ! Avec 7 victoires et 12 podiums, c'était encore une saison vraiment réussie !",
+  "about-p12": "De plus, j'ai pu découvrir la BMW M2 CS Racing Cup Benelux. Là aussi, j'ai immédiatement décroché 2 podiums lors de mon weekend de débuts ! Et pour couronner le tout, j'ai également fait mes débuts en course d'endurance ! Avec un déplacement sur le circuit de Portimao au Portugal pour les 24H C1 Eurocup.",
+  "about-p13": "La saison 2024 fut à nouveau une saison inoubliable. Avec 8 victoires sur 12 courses et un 3ème titre consécutif, je suis devenu le pilote le plus titré de l'histoire de la Ford Fiesta Sprint Cup Benelux.",
+  "about-p14": "J'ai également pu participer à nouveau à une course d'endurance avec la C1 Benelux. Cette fois-ci, c'était les 24h de Spa. Après avoir longtemps mené la course, j'ai finalement dû me contenter de la 6ème place sur 118 participants suite à des problèmes mécaniques durant la nuit, ce qui restait tout de même un très bon résultat.",
+  "about-p15": "Pour couronner le tout, une première journée d'essai avec la Porsche 992 Porsche GT3 Cup s'est déroulée également sur le circuit de Spa-Francorchamps. L'objectif pour la saison 2025 est devenu immédiatement clair !",
+  "about-to-the-top": "Let’s race to the top!",
+  "tdb-racing-p1": "Je peux certainement m'appuyer sur l'expérience de mon père Eddy qui a déjà beaucoup compté dans ma carrière de pilote. En 1997, l'équipe de course 'X-Pectmotorsport' a été créée sous la direction de mon père Eddy De Backer.",
+  "tdb-racing-p2": "J'ai rejoint l'équipe en tant que jeune pilote et suis finalement devenu copropriétaire de l'équipe et coach pour les jeunes pilotes.",
+  "tdb-racing-p3": "À partir de 2023, l'équipe et la plateforme de coaching continuent sous un nouveau nom 'TDB Racing'. TDB Racing n'est plus seulement une équipe aujourd'hui mais aussi la marque que je représente personnellement dans le monde de la course. L'équipe se concentre principalement sur les catégories d'entrée du karting vers le sport automobile sur les grands circuits. La marque suit mes propres rêves de sport automobile."
 }

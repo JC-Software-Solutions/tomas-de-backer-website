@@ -3,6 +3,7 @@ import { SitemapStream, streamToPromise } from 'sitemap'
 const routes = [
   '/',
   '/about',
+  '/tdb-racing',
   '/calendar',
   '/results',
 ]

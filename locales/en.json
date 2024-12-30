@@ -1,7 +1,7 @@
 {
   "seo": {
     "index-title": "Tomas De Backer – Belgian racing driver {separator} Official website",
-    "index-description": "Tomas De Backer is a Belgian racing driver and the champion of the 2022 Ford Fiesta Sprint Cup BE. Check out his official website here.",
+    "index-description": "Tomas De Backer is a Belgian racing driver and the champion of the 2022, 2023 & 2024 Ford Fiesta Sprint Cup Benelux. Check out his official website here.",
     "about-title": "Tomas De Backer {separator} Career highlights  {separator} Official website",
     "about-description": "Tomas De Backer has the drive to race to the top in motorsport. Check out his biography and highlights of his career here.",
     "calendar-title": "Tomas De Backer {separator} Calendar {separator} Official website",
@@ -15,7 +15,10 @@
   },
   "img-alt": {
     "tomas": "Tomas De Backer in race overall",
-    "tomas-eddy": "Eddy De Backer next to the kart with Tomas De Backer",
+    "tomas-eddy-karting": "Eddy De Backer next to the kart with Tomas De Backer",
+    "tomas-eddy": "Tomas De Backer with his father Eddy De Backer",
+    "tomas-eddy-2": "Tomas De Backer hugging his father Eddy De Backer",
+    "coaching": "Tomas De Backer coaching one of his pupils",
     "tomas-sarah": "Tomas De Backer is embraced by his girlfriend Sarah Maes after a victory",
     "tomas-family": "Tomas De Backer posing with his family and friends in front of the pitbox",
     "tomas-p1": "Tomas De Backer cheers for his first place",
@@ -25,8 +28,9 @@
     "podium": "Tomas De Backer on the top step of the podium",
     "zolder-heuvel": "Tomas De Backer drives his Ford Fiesta on the circuit of Zolder"
   },
-  "hero-title": "2023 Ford Fiesta Sprint Cup Benelux Champion",
+  "hero-title": "Ford Fiesta Sprint Cup Benelux Champion 2022, 2023 & 2024",
   "about-tomas": "about Tomas De Backer",
+  "tdb-racing": "TDB Racing",
   "results": "results",
   "calendar": "calendar",
   "sponsors": "sponsors",
@@ -55,7 +59,7 @@
   "contact-success": "Your message has been sent successfully",
   "contact-failed": "Something went wrong. Please try again later",
   "about-excerpt-title": "Tomas De Backer",
-  "about-excerpt": "Hi, I'm Tomas De Backer – a Belgian racing driver. I've got what it takes to reach the top in (international) motorsport. I visited the Circuit Zolder and Spa-Francorchamps when I was just two years old, and I was bitten by the racing bug right away. Ever since, my motorsport career has gone from strength to strength, culminating in the Benelux title in the 2022 Ford Fiesta Sprint Cup.",
+  "about-excerpt": "Hi, I'm Tomas De Backer – a Belgian racing driver. I've got what it takes to reach the top in (international) motorsport. I visited the Circuit Zolder and Spa-Francorchamps when I was just two years old, and I was bitten by the racing bug right away. Ever since, my motorsport career has gone from strength to strength, culminating in the Benelux title in the 2022, 2023 & 2024 Ford Fiesta Sprint Cup.",
   "about-discover-full": "See my bio and all my career highlights",
   "check-all-results": "Check all results",
   "check-all-races": "Check all races",
@@ -70,5 +74,13 @@
   "about-p8": "From the 2020 season, I competed in the Belgian Ford Fiesta Sprint Cup, the cup that's famous for launching the careers of talented young drivers. I won the junior title in my first season, finishing as the vice-champion overall – a great start to an incredibly successful period for me.",
   "about-p9": "Unfortunately, the 2021 season brought a lot of mechanical bad luck. This kept me stuck in 3rd place overall. Ironically, it was the season where I had the most wins and pole positions.",
   "about-p10": "The 2022 season was the ultimate culmination of all the previous seasons' hard work, and I won the overall Belgian title as well as the Belgian junior title. I also took the overall Dutch/Belgium Superstar title. At 10 wins and 13 podiums out of 14 races, this was an unprecedented feat in the history of the Belgian Fiesta Cup.",
-  "about-to-the-top": "Let’s race to the top!"
+  "about-p11": "In the 2023 season, an unofficial Ford Fiesta Sprint Cup Benelux championship was organized for the first time. No more separate rankings, but one general classification. After 7 race weekends and 14 races, I could crown myself champion again! With 7 victories and 12 podiums, it was another truly successful season!",
+  "about-p12": "Furthermore, I got to know the BMW M2 CS Racing Cup Benelux. Here too, I immediately scored 2 podiums in my debut weekend! Last but not least, I also made my debut in endurance racing! With a trip to the Portimao circuit in Portugal for the 24H C1 Eurocup.",
+  "about-p13": "The 2024 season was once again an unforgettable season. With 8 victories in 12 races and a 3rd consecutive title, I became the most successful driver in the history of the Ford Fiesta Sprint Cup Benelux.",
+  "about-p14": "I was also able to participate again in an endurance race with the C1 Benelux. This time it was the 24h of Spa. After leading the race for a long time, I eventually had to settle for 6th place out of 118 participants due to mechanical problems during the night, which was still a very strong result.",
+  "about-p15": "As the icing on the cake, a first test day with the Porsche 992 Porsche GT3 Cup also took place at the Spa-Francorchamps circuit. The goal for the 2025 season immediately became clear!",
+  "about-to-the-top": "Let's race to the top!",
+  "tdb-racing-p1": "I can certainly rely on the experience of my father Eddy, who has already meant a lot in my racing career. In 1997, the racing team 'X-Pectmotorsport' was created under the leadership of my father Eddy De Backer.",
+  "tdb-racing-p2": "I joined the team as a young driver and eventually became co-team owner and coach for the young pupils.",
+  "tdb-racing-p3": "From 2023, the team and coaching platform continue under a new name 'TDB Racing'. TDB Racing is currently not just a team anymore but also the brand that I personally represent in the racing world. The team focuses mainly on the entry-level classes from karting to real motorsport on the major circuits. The brand follows along with my own motorsport dreams."
 }

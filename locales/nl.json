@@ -1,7 +1,7 @@
 {
   "seo": {
     "index-title": "Tomas De Backer – Belgisch racepiloot {separator} Officiële website",
-    "index-description": "Tomas De Backer is een Belgisch racepiloot en kampioen van de 2022 Ford Fiesta Sprint Cup BE. Bekijk hier zijn officiële website.",
+    "index-description": "Tomas De Backer is een Belgisch racepiloot en kampioen van de 2022, 2023 & 2024 Ford Fiesta Sprint Cup Benelux. Bekijk hier zijn officiële website.",
     "about-title": "Tomas De Backer {separator} Hoogtepunten {separator} Officiële website",
     "about-description": "Tomas De Backer heeft de drive om naar de top te racen in de autosport. Bekijk hier zijn biografie en hoogtepunten uit zijn carrière.",
     "calendar-title": "Tomas De Backer {separator} Kalender {separator} Officiële website",
@@ -15,7 +15,9 @@
   },
   "img-alt": {
     "tomas": "Tomas De Backer in race overall",
-    "tomas-eddy": "Eddy De Backer naast de kart waar Tomas De Backer in zit",
+    "tomas-eddy-karting": "Eddy De Backer naast de kart met Tomas De Backer",
+    "tomas-eddy": "Tomas De Backer met zijn vader Eddy De Backer",
+    "tomas-eddy-2": "Tomas De Backer die zijn vader Eddy De Backer omhelst",
     "tomas-sarah": "Tomas De Backer wordt omhelst door zijn vriendin Sarah Maes na een overwinning",
     "tomas-family": "Tomas De Backer aan het poseren met zijn familie en vrienden voor de pitbox",
     "tomas-p1": "Tomas De Backer juicht om zijn eerste plaats",
@@ -26,8 +28,9 @@
     "podium": "Tomas De Backer op de bovenste trede van het podium",
     "zolder-heuvel": "Tomas De Backer rijdt met zijn Ford Fiesta in Zolder"
   },
-  "hero-title": "2023 Ford Fiesta Sprint Cup Benelux Kampioen",
+  "hero-title": "Ford Fiesta Sprint Cup Benelux Kampioen 2022, 2023 & 2024",
   "about-tomas": "over Tomas De Backer",
+  "tdb-racing": "TDB Racing",
   "results": "resultaten",
   "calendar": "kalender",
   "sponsors": "sponsors",
@@ -54,7 +57,7 @@
   "contact-success": "Je bericht is verzonden. Bedankt!",
   "contact-failed": "Er is iets misgelopen. Probeer het later opnieuw.",
   "about-excerpt-title": "Tomas De Backer",
-  "about-excerpt": "Hallo, ik ben Tomas De Backer – Belgisch racepiloot met de drive om krachtige resultaten te bereiken in de (internationale) autosport. Toen ik twee jaar was, bezocht ik het Circuit van Zolder en Spa-Francorchamps, en de vonk sloeg meteen over. Ondertussen heb ik een stevige carrière uitgebouwd in de autosport, met de Benelux-titel in de Ford Fiesta Sprint Cup 2022 als kers op de taart.",
+  "about-excerpt": "Hallo, ik ben Tomas De Backer – Belgisch racepiloot met de drive om krachtige resultaten te bereiken in de (internationale) autosport. Toen ik twee jaar was, bezocht ik het Circuit van Zolder en Spa-Francorchamps, en de vonk sloeg meteen over. Ondertussen heb ik een stevige carrière uitgebouwd in de autosport, met de Benelux-titel in de Ford Fiesta Sprint Cup 2022, 2023 & 2024 als kers op de taart.",
   "about-discover-full": "Ontdek volledige bio & hoogtepunten",
   "check-all-results": "Check alle resultaten",
   "check-all-races": "Check alle races",
@@ -71,5 +74,11 @@
   "about-p10": "Seizoen 2022 werd de ultieme bekroning van al het harde werk de afgelopen seizoenen, met zowel de titel in het algemene Belgisch klassement als bij de Belgische junioren. Ook kon ik de algemene titel van de Dutch/Belgium Superstar op mijn naam schrijven. Met 10 overwinningen en 13 podia op 14 wedstrijden was dit een ongezien resultaat in het bestaan van de Belgische Fiesta Cup.",
   "about-p11": "In het seizoen 2023 wordt er voor het eerst een officieus Ford Fiesta Sprint Cup Benelux kampioenschap georganiseerd. Geen gescheiden klassementen meer, maar één algemeen klassement. Na 7 raceweekends, 14 races kon ik mij opnieuw kampioen kronen! Met 7 overwinningen en 12 podia was het weer een echt succes seizoen!",
   "about-p12": "Verder kon ik kennis maken met de BMW M2 CS Racing Cup Benelux. Ook hier scoorde ik meteen 2 podia in mijn debuut weekend! Last but not least maakte ik ook mijn debuut in het endurance racen! Met een verplaatsing naar het circuit van Portimao in Portugal voor de 24H C1 Eurocup.",
-  "about-to-the-top": "Let’s race to the top!"
+  "about-p13": "Seizoen 2024 werd opnieuw een onvergetelijk seizoen. Met 8 overwinningen op 12 races en een 3de op één volgende titel werd ik de meest succesvolle rijder in de geschiedenis van de Ford Fiesta Sprint Cup Benelux.",
+  "about-p14": "Verder kon ik opnieuw deelnemen aan een endurance wedstrijd met de C1 Benelux. Dit maal was de 24h van Spa aan de beurt. Na lang op kop van de wedstrijd te hebben gelegen moest ik uiteindelijk vrede nemen met de 6de plaats op 118 deelnemers na mechanische pech tijdens de nacht wat nog steeds een zeer sterk resultaat was.",
+  "about-p15": "Als kers op de taart volgde een eerste testdag met de Porsche 992 Porsche GT3 Cup eveneens op het circuit van Spa-Francorchamps. Het doel voor seizoen 2025 werd bij deze ineens duidelijk!",
+  "about-to-the-top": "Let’s race to the top!",
+  "tdb-racing-p1": "Waar ik zeker op kan terugvallen is de ervaring van mijn vader Eddy die al heel veel betekend heeft in mijn race carrière. In 1997 ontstond het raceteam ‘X-Pectmotorsport’ onder leiding van mijn vader Eddy De Backer.",
+  "tdb-racing-p2": "Ik vervoegde als jonge piloot het team en werd uiteindelijk mede-teameigenaar en coach voor de jonge pupillen.",
+  "tdb-racing-p3": "Vanaf 2023 word er onder een nieuwe naam ‘TDB Racing’ verder geborduurd aan het team en het coaching platform. TDB Racing is momenteel niet enkel een team meer maar ook het merk dat ik zelf vertegenwoordig in de racewereld. Het team focust zich vooral op de instap klassen van karting naar de echte autosport op de grote circuits. Het merk gaat mee met mijn eigen autosportdromen."
 }

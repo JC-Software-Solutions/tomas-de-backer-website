@@ -31,7 +31,7 @@ useSeoMeta({
             format="webp"
             :img-attrs="{
               'class': 'article-img',
-              'alt': $t('img-alt.tomas-eddy'),
+              'alt': $t('img-alt.tomas-eddy-karting'),
               'data-aos': 'fade-left',
             }"
           />
@@ -118,9 +118,6 @@ useSeoMeta({
           <p>
             {{ $t('about-p12') }}
           </p>
-          <p class="text-secondary font-weight-bold text-xl">
-            {{ $t('about-to-the-top') }}
-          </p>
         </div>
         <div class="my-auto mx-auto">
           <NuxtPicture
@@ -132,6 +129,34 @@ useSeoMeta({
               'data-aos': 'fade-left',
             }"
           />
+        </div>
+      </section>
+
+      <section class="flex flex-wrap flex-col-reverse xl:flex-row justify-center xl:justify-around gap-5 md:mt-5 lg:mt-10">
+        <div class="my-auto mx-auto">
+          <NuxtPicture
+            src="/img/action/porsche.jpg"
+            format="webp"
+            :img-attrs="{
+              'class': 'article-img',
+              'alt': $t('img-alt.fiesta'),
+              'data-aos': 'fade-left',
+            }"
+          />
+        </div>
+        <div class="w-full lg:w-3/5 my-auto mx-auto" data-aos="fade-left">
+          <p>
+            {{ $t('about-p13') }}
+          </p>
+          <p>
+            {{ $t('about-p14') }}
+          </p>
+          <p>
+            {{ $t('about-p15') }}
+          </p>
+          <p class="text-secondary font-weight-bold text-xl">
+            {{ $t('about-to-the-top') }}
+          </p>
         </div>
       </section>
 
@@ -180,7 +205,7 @@ useSeoMeta({
 
       <div class="w-full xl:w-1/2" data-aos="fade-left">
         <NuxtPicture
-          src="/img/tomas/tomas-p1.jpg"
+          src="/img/tomas/tomas-victory.png"
           format="webp"
           :img-attrs="{
             class: 'rounded-lg shadow-lg md:float-right mt-24 md:max-w-600px w-auto',
