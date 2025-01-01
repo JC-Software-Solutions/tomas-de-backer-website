@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-defineProps<{
+const props = defineProps<{
   sessions: {
     name: string;
     position: number;
@@ -9,6 +9,8 @@ defineProps<{
     fastestLap: number;
   }[];
 }>()
+
+const hasPositionInBelgium = props.sessions.some(session => session.positionBelgium)
 </script>
 
 <template>
@@ -17,7 +19,9 @@ defineProps<{
       <tr class="text-secondary font-normal text-xs md:text-sm lg:text-base">
         <th />
         <th>#{{ $t('general') }}</th>
-        <th>#{{ $t('belgium') }}</th>
+        <th v-if="hasPositionInBelgium">
+          #{{ $t('belgium') }}
+        </th>
         <th>{{ $t('kph') }}</th>
         <th>{{ $t('laps') }}</th>
         <th>{{ $t('fastest-lap') }}</th>
@@ -32,7 +36,7 @@ defineProps<{
           <td class="w-80px text-xs lg:text-base">
             {{ session.position }}
           </td>
-          <td class="w-90px text-xs lg:text-base">
+          <td v-if="hasPositionInBelgium" class="w-90px text-xs lg:text-base">
             {{ session.positionBelgium }}
           </td>
           <td class="w-40px md:w-80px text-xs lg:text-base">

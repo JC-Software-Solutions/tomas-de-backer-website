@@ -1,3 +1,182 @@
 [
-  {  }
+  {
+    "title": "Race 1 - Voorjaars races",
+    "championship": "Ford Fiesta Sprint Cup",
+    "track": "Zandvoort, NL",
+    "startDate": "2023-04-14",
+    "endDate": "2023-04-16",
+    "sessions": [
+      {
+        "name": "qualification",
+        "position": 2,
+        "kph": 126.55,
+        "laps": 7,
+        "fastestLap": "2:01.154"
+      },
+      {
+        "name": "race 1",
+        "position": 1,
+        "kph": 126.06,
+        "laps": 15,
+        "fastestLap": "2:00.609"
+      },
+      {
+        "name": "race 2",
+        "position": 5,
+        "kph": 112.06,
+        "laps": 14,
+        "fastestLap": "2:02.002"
+      }
+    ]
+  },
+  {
+    "title": "Race 2 - Spa Euro Races",
+    "championship": "Ford Fiesta Sprint Cup",
+    "track": "Spa Francorchamps, BE",
+    "startDate": "2023-06-02",
+    "endDate": "2023-06-04",
+    "sessions": [
+      {
+        "name": "qualification",
+        "position": 1,
+        "kph": 140.2,
+        "laps": 7,
+        "fastestLap": "2:59.809"
+      },
+      {
+        "name": "race 1",
+        "position": 1,
+        "kph": 128.4,
+        "laps": 10,
+        "fastestLap": "3:16.301"
+      },
+      {
+        "name": "race 2",
+        "position": "DNC",
+        "kph": 140.5,
+        "laps": 8,
+        "fastestLap": "2:59.515"
+      }
+    ]
+  },
+  {
+    "title": "Race 3 - Zolder Supercar Madness",
+    "championship": "Ford Fiesta Sprint Cup",
+    "track": "Zolder, BE",
+    "startDate": "2023-07-07",
+    "endDate": "2023-07-09",
+    "sessions": [
+      {
+        "name": "qualification",
+        "position": 1,
+        "kph": 126.03,
+        "laps": 10,
+        "fastestLap": "1:54.117"
+      },
+      {
+        "name": "race 1",
+        "position": 1,
+        "kph": 125.24,
+        "laps": 16,
+        "fastestLap": "1:54.036"
+      },
+      {
+        "name": "race 2",
+        "position": 1,
+        "kph": 125.63,
+        "laps": 16,
+        "fastestLap": "1:53:691"
+      }
+    ]
+  },
+  {
+    "title": "Race 4 - Jack's Racing Days",
+    "championship": "Ford Fiesta Sprint Cup",
+    "track": "Assen, NL",
+    "startDate": "2023-08-11",
+    "endDate": "2023-08-13",
+    "sessions": [
+      {
+        "name": "qualification",
+        "position": 1,
+        "kph": 139.40,
+        "laps": 10,
+        "fastestLap": "2:02.923"
+      },
+      {
+        "name": "race 1",
+        "position": 1,
+        "kph": 132.09,
+        "laps": 15,
+        "fastestLap": "2:03.220"
+      },
+      {
+        "name": "race 2",
+        "position": 6,
+        "kph": 126.37,
+        "laps": 13,
+        "fastestLap": "2:02.892"
+      }
+    ]
+  },
+  {
+    "title": "Race 5 - Trophy of the Dunes",
+    "championship": "Ford Fiesta Sprint Cup",
+    "track": "Zandvoort, NL",
+    "startDate": "2023-09-15",
+    "endDate": "2023-09-17",
+    "sessions": [
+      {
+        "name": "qualification",
+        "position": 1,
+        "kph": 127.14,
+        "laps": 6,
+        "fastestLap": "2:00.600"
+      },
+      {
+        "name": "race 1",
+        "position": 1,
+        "kph": 125.78,
+        "laps": 15,
+        "fastestLap": "2:00.947"
+      },
+      {
+        "name": "race 2",
+        "position": "DNC",
+        "kph": 83.03,
+        "laps": 10,
+        "fastestLap": "2:01:202"
+      }
+    ]
+  },
+  {
+    "title": "Race 6 - American Sunday Finale Races Assen",
+    "championship": "Ford Fiesta Sprint Cup",
+    "track": "Assen, NL",
+    "startDate": "2023-10-14",
+    "endDate": "2023-10-15",
+    "sessions": [
+      {
+        "name": "qualification",
+        "position": 1,
+        "kph": 128.24,
+        "laps": 6,
+        "fastestLap": "2:02.345"
+      },
+      {
+        "name": "race 1",
+        "position": 1,
+        "kph": 128.25,
+        "laps": 15,
+        "fastestLap": "2:02:131"
+      },
+      {
+        "name": "race 2",
+        "position": 1,
+        "kph": 133.25,
+        "laps": 15,
+        "fastestLap": "2:01:929"
+      }
+    ]
+  }
 ]
