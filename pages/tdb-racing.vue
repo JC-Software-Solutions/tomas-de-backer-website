@@ -14,7 +14,7 @@ useSeoMeta({
         <h1 class="font-sans font-weight-bold text-xl md:text-4xl py-2 capitalize" data-aos="fade-right">
           {{ $t('tdb-racing') }}
         </h1>
-        <img src="/img/logo/TDB-logo.svg" alt="TDB Racing Logo" class="w-20 ml-5" data-aos="fade-left">
+        <img src="/img/logo/TDB-logo.svg" alt="TDB Racing Logo" class="w-20 ml-5 mt-2 md:mt-0" data-aos="fade-left">
       </span>
 
       <section class="flex flex-wrap justify-center xl:justify-around gap-5 md:mt-5 lg:mt-10">
@@ -29,7 +29,7 @@ useSeoMeta({
             {{ $t('tdb-racing-p3') }}
           </p>
         </div>
-        <div class="my-auto mx-auto">
+        <div class="my-auto mx-auto mb-5">
           <NuxtPicture
             src="/img/tomas/tomas-eddy.jpg"
             format="webp"
