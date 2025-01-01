@@ -10,7 +10,7 @@ useSeoMeta({
 
 <template>
   <div class="container flex flex-col mx-auto pt-4 min-h-[calc(100vh-100px)]">
-    <h3 class="text-center text-4xl capitalize">
+    <h3 class="text-center text-4xl capitalize mt-10">
       {{ $t('calendar') }}
     </h3>
 

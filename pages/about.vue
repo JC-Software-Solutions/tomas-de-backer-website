@@ -208,7 +208,7 @@ useSeoMeta({
           src="/img/tomas/tomas-victory.png"
           format="webp"
           :img-attrs="{
-            class: 'rounded-lg shadow-lg md:float-right mt-24 md:max-w-600px w-auto',
+            class: 'rounded-lg shadow-lg mx-auto mt-24 md:max-w-600px w-auto',
             alt: $t('img-alt.tomas-p1'),
           }"
         />
