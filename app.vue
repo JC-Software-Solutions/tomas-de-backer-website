@@ -78,7 +78,7 @@ useBlockScrolling(loading)
     <FullScreenLoader v-if="loading" />
 
     <AppHeader />
-    <main pb-10 container mx-auto>
+    <main container mx-auto>
       <NuxtPage />
     </main>
     <AppFooter absolute bottom-0 w-full />
