@@ -81,4 +81,10 @@ export default defineNuxtConfig({
   gtag: {
     id: 'G-41R2GEN8KY',
   },
+
+  routeRules: {
+    '/promovideo': {
+      redirect: 'http://youtu.be/Pfx_TeMsi5E',
+    },
+  },
 })
